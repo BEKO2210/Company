@@ -1,0 +1,35 @@
+name: Deploy registry site
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'public/**'
+      - 'wrangler.toml'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: 9785405a992435bb0c7bd19f9b6d26d5
+        run: npx wrangler@4 pages deploy ./public --project-name=kortix-registry --branch=master

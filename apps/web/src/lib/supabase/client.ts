@@ -1,0 +1,31 @@
+import { createBrowserClient } from '@supabase/ssr'
+import { KORTIX_SUPABASE_AUTH_COOKIE } from './constants'
+import { getEnv } from '@/lib/env-config'
+
+export function createClient() {
+  const runtimeEnv = getEnv()
+  const url = runtimeEnv.SUPABASE_URL
+  const key = runtimeEnv.SUPABASE_ANON_KEY
+
+  if (!url || !key) {
+    if (typeof window !== 'undefined') {
+      throw new Error('Missing Supabase browser environment variables');
+    }
+
+    return createBrowserClient('https://placeholder.invalid', 'placeholder-anon-key', {
+      cookieOptions: {
+        name: KORTIX_SUPABASE_AUTH_COOKIE,
+        path: '/',
+        sameSite: 'lax',
+      },
+    })
+  }
+
+  return createBrowserClient(url, key, {
+    cookieOptions: {
+      name: KORTIX_SUPABASE_AUTH_COOKIE,
+      path: '/',
+      sameSite: 'lax',
+    },
+  })
+}

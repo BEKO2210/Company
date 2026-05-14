@@ -1,0 +1,32 @@
+# Production compose — used by deploy-api.yml CI workflow on the VPS.
+# Build from repo root: docker compose --profile backend up -d
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+        NEXT_PUBLIC_BACKEND_URL: ${NEXT_PUBLIC_BACKEND_URL}
+        NEXT_PUBLIC_BILLING_ENABLED: ${NEXT_PUBLIC_BILLING_ENABLED:-false}
+        NEXT_PUBLIC_ENV_MODE: ${NEXT_PUBLIC_ENV_MODE:-local}
+    ports:
+      - "3000:3000"
+    profiles: [frontend, all]
+    restart: unless-stopped
+
+  kortix-api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      args:
+        SERVICE: kortix-api
+    ports:
+      - "8008:8008"
+    env_file:
+      - path: apps/api/.env
+        required: false
+    profiles: [backend, all]
+    restart: unless-stopped

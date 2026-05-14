@@ -1,0 +1,32 @@
+{
+  "name": "kortix",
+  "private": true,
+  "scripts": {
+    "dev": "bash scripts/dev-local.sh",
+    "dev:prod": "bash scripts/dev-prod.sh",
+    "dev:web": "pnpm --filter Kortix-Computer-Frontend dev",
+    "dev:frontend": "pnpm --filter Kortix-Computer-Frontend dev",
+    "dev:mobile": "pnpm --filter ./apps/mobile dev",
+    "dev:desktop": "pnpm --filter @kortix/desktop dev:macos",
+    "dev:api": "pnpm --filter kortix-api dev",
+    "dev:core": "docker compose -f core/docker/docker-compose.yml -f core/docker/docker-compose.dev.yml up",
+    "dev:core:build": "docker compose -f core/docker/docker-compose.yml -f core/docker/docker-compose.dev.yml up --build",
+    "dev:sandbox": "docker compose -f core/docker/docker-compose.yml -f core/docker/docker-compose.dev.yml up",
+    "dev:sandbox:build": "docker compose -f core/docker/docker-compose.yml -f core/docker/docker-compose.dev.yml up --build",
+    "build": "pnpm -r run build",
+    "nuke": "bash scripts/nuke-local.sh",
+    "nuke:start": "bash scripts/nuke-local.sh --start",
+    "start": "bash scripts/start-local.sh",
+    "stripe:listen": "stripe listen --forward-to http://localhost:8008/v1/billing/webhooks/stripe"
+  },
+  "devDependencies": {
+    "agent-tunnel": "workspace:@kortix/agent-tunnel@*"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "^18.3.28",
+      "@types/react-dom": "^18.3.7"
+    }
+  },
+  "packageManager": "pnpm@8.15.8+sha512.d1a029e1a447ad90bc96cd58b0fad486d2993d531856396f7babf2d83eb1823bb83c5a3d0fc18f675b2d10321d49eb161fece36fe8134aa5823ecd215feed392"
+}

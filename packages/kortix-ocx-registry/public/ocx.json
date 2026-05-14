@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/ocx.json",
+  "namespace": "kortix",
+  "author": "kortix",
+  "name": "kortix-ocx-registry",
+  "description": "Kortix Marketplace - Skills for Kortix AI Agents",
+  "registries": {
+    "kortix": {
+      "url": "https://kortix-registry-6om.pages.dev"
+    }
+  },
+  "lockRegistries": false,
+  "skipCompatCheck": false,
+  "components": {
+    "skills": []
+  }
+}

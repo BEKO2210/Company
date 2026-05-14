@@ -1,0 +1,8 @@
+{
+  "name": "kortix-ocx-registry",
+  "version": "1.0.0",
+  "namespace": "kortix",
+  "author": "kortix",
+  "description": "Kortix Marketplace - Skills for Kortix AI Agents",
+  "components": []
+}

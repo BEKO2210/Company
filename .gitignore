@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env*.local
+.env.production
+.env.prod
+.env.development
+.env.scripts
+.env.docker
+*.env.docker
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+**/.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Next.js
+.vercel/
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+
+# Misc
+state.json
+.release-state.json
+*.db
+dump.rdb
+.aider*
+.setup_progress
+.setup_env.json
+**/.prompts/
+.cwc/
+test/
+
+# Core runtime data
+.kortix/
+apps/api/.kortix-data/
+apps/api/.sandbox-auth-token.json
+core/kortix-master/opencode/.kortix/
+**/.buildx-cache/
+
+.nx/
+.pulumi
+.pulumi/
+.vercel

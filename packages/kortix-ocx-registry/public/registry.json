@@ -1,0 +1,10 @@
+{
+  "$schema": "https://registry.kortix.com/schema.json",
+  "version": "1.0.0",
+  "name": "kortix-ocx-registry",
+  "description": "Kortix Marketplace - Skills for Kortix AI Agents",
+  "updated": "2026-03-22",
+  "registryUrl": "https://kortix-registry-6om.pages.dev",
+  "repository": "https://github.com/kortix-ai/kortix-ocx-registry",
+  "skills": []
+}
