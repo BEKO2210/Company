@@ -43,13 +43,15 @@ function findChromium() {
   return undefined;
 }
 
+// fullPage:false captures just the 1440x900 viewport (good for hero/above-the-fold
+// pages); fullPage:true captures the whole scrollable page (good for content pages).
 const PUBLIC_PAGES = [
-  { name: 'landing', url: '/',      wait: 3500 },
-  { name: 'login',   url: '/auth',  wait: 3000 },
-  { name: 'legal',   url: '/legal', wait: 3000 },
+  { name: 'landing', url: '/',      wait: 3500, fullPage: false },
+  { name: 'login',   url: '/auth',  wait: 3000, fullPage: false },
+  { name: 'legal',   url: '/legal', wait: 3000, fullPage: true },
 ];
 const AUTH_PAGES = [
-  { name: 'dashboard', url: '/dashboard', wait: 5000 },
+  { name: 'dashboard', url: '/dashboard', wait: 5000, fullPage: true },
 ];
 
 async function launch() {
@@ -75,7 +77,7 @@ async function shoot(ctx, p) {
   }
   await page.waitForTimeout(p.wait);
   const file = path.join(OUT, `${p.name}.png`);
-  await page.screenshot({ path: file, fullPage: true });
+  await page.screenshot({ path: file, fullPage: p.fullPage !== false });
   const kb = Math.round(fs.statSync(file).size / 1024);
   console.log(`  ${p.name.padEnd(10)} -> screenshots/${p.name}.png (${kb} KB)`);
   await page.close();

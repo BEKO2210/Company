@@ -58,7 +58,17 @@ generated automatically on first run.
 
 ## Screenshots
 
+**Landing**
+
+![The Company — landing page](screenshots/landing.png)
+
+**Sign-in**
+
 ![The Company — sign-in](screenshots/login.png)
+
+**Legal / imprint**
+
+![The Company — legal page](screenshots/legal.png)
 
 Regenerate the screenshot set any time with **`pnpm screenshots`** (the web app
 must be running). It captures the public pages out of the box; pass
