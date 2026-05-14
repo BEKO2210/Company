@@ -97,24 +97,19 @@ function LegalContent() {
                         Company Information
                       </h3>
                       <div className="text-muted-foreground mb-6 space-y-2">
+                        {/* TEMPLATE — replace with your own registered legal entity details */}
                         <p>
-                          <strong>The Company AI Corp</strong>
+                          <strong>‹Your Registered Company Name›</strong>
                         </p>
-                        <p>Incorporated in Delaware, United States</p>
+                        <p>‹Jurisdiction of incorporation›</p>
                         <p className="mt-4">
                           <strong>Principal Place of Business:</strong>
                         </p>
-                        <p>701 Tillery Street</p>
-                        <p>Unit 12-2521</p>
-                        <p>Austin, TX 78702</p>
-                        <p>United States</p>
+                        <p>‹Your registered business address›</p>
                         <p className="mt-4">
                           <strong>Registered Agent:</strong>
                         </p>
-                        <p>Firstbase Agent LLC</p>
-                        <p>1007 N Orange St. 4th Floor Suite #1382</p>
-                        <p>Wilmington, DE 19801</p>
-                        <p>United States</p>
+                        <p>‹Your registered agent, if applicable›</p>
                       </div>
 
                       <h3 className="text-lg font-medium tracking-tight">
@@ -124,10 +119,10 @@ function LegalContent() {
                         <p>
                           Email:{' '}
                           <a
-                            href="mailto:info@kortix.com"
+                            href="mailto:info@example.com"
                             className="text-primary hover:underline"
                           >
-                            info@kortix.com
+                            info@example.com
                           </a>
                         </p>
                       </div>
@@ -174,7 +169,7 @@ function LegalContent() {
                         USE" or "TERMS OF SERVICE" or "TERMS AND CONDITIONS")
                         CAREFULLY BEFORE USING THE SERVICES OFFERED BY The Company AI
                         Corp, a Delaware corporation with its principal place of business
-                        at 701 Tillery Street Unit 12-2521, Austin, Texas 78702, United States
+                        at ‹your registered business address›
                         ("Company"). THIS AGREEMENT SETS FORTH THE LEGALLY
                         BINDING TERMS AND CONDITIONS FOR YOUR USE OF THE The Company
                         WEBSITE AND ALL RELATED SERVICES.
@@ -185,9 +180,9 @@ function LegalContent() {
                       </h3>
                       <ul className="text-muted-foreground space-y-1 mb-6">
                         <li>
-                          "Company" refers to The Company AI Corp, a Delaware corporation
-                          with its principal place of business at 701 Tillery Street
-                          Unit 12-2521, Austin, Texas 78702, United States.
+                          "Company" refers to ‹Your Registered Company Name›,
+                          with its principal place of business at
+                          ‹your registered business address›.
                         </li>
                         <li>
                           "Site" refers to The Company website, including any related
@@ -273,7 +268,7 @@ function LegalContent() {
                         </li>
                         <li>
                           "Notice Address" refers to the contact address for the
-                          Company, specifically legal@kortix.com
+                          Company, specifically legal@example.com
                         </li>
                         <li>
                           "Privacy Policy" refers to the document outlining how
@@ -652,7 +647,7 @@ function LegalContent() {
                         held by others. We respect rights holders internationally,
                         and we ask our users to do the same. If you believe your
                         copyright or trademark is being infringed by the Service,
-                        please write to legal@kortix.com and we will process and
+                        please write to legal@example.com and we will process and
                         investigate your request and take appropriate actions
                         under the Digital Millennium Copyright Act and other
                         applicable intellectual property laws with respect to any
@@ -708,10 +703,10 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-4">
                         To exercise these rights, please contact us at{' '}
                         <a
-                          href="mailto:info@kortix.com"
+                          href="mailto:info@example.com"
                           className="text-primary hover:underline"
                         >
-                          info@kortix.com
+                          info@example.com
                         </a>
                         . We will respond to your request within a reasonable timeframe
                         and in accordance with applicable law.
@@ -753,10 +748,10 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-4">
                         For GDPR-related requests, please contact us at{' '}
                         <a
-                          href="mailto:info@kortix.com"
+                          href="mailto:info@example.com"
                           className="text-primary hover:underline"
                         >
-                          info@kortix.com
+                          info@example.com
                         </a>
                         . Our legal basis for processing your data includes performance
                         of contract, legitimate interests, consent, and compliance with
@@ -797,10 +792,10 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-6">
                         To exercise your CCPA rights, please contact us at{' '}
                         <a
-                          href="mailto:info@kortix.com"
+                          href="mailto:info@example.com"
                           className="text-primary hover:underline"
                         >
-                          info@kortix.com
+                          info@example.com
                         </a>
                         . We may require verification of your identity before processing
                         your request. We will not discriminate against you for exercising
@@ -816,7 +811,7 @@ function LegalContent() {
                         subscription, payable in U.S. dollars, that will
                         automatically renew. You can stop using the Service and
                         cancel your subscription at any time through the website
-                        or by emailing us at info@kortix.com. If you cancel
+                        or by emailing us at info@example.com. If you cancel
                         your subscription, you may not receive a refund or credit
                         for any amounts that have already been billed or paid. The
                         Company reserves the right to change its prices at any
@@ -1004,10 +999,10 @@ function LegalContent() {
                         Account at any time by following the instructions on the Service
                         or by contacting us at{' '}
                         <a
-                          href="mailto:info@kortix.com"
+                          href="mailto:info@example.com"
                           className="text-primary hover:underline"
                         >
-                          info@kortix.com
+                          info@example.com
                         </a>
                         . Termination of your Account will result in the deletion of
                         your data in accordance with our data retention policies.
@@ -1249,10 +1244,10 @@ function LegalContent() {
                         required. Please refer to the LICENSE file for complete terms
                         and contact{' '}
                         <a
-                          href="mailto:hey@kortix.com"
+                          href="mailto:hey@example.com"
                           className="text-primary hover:underline"
                         >
-                          hey@kortix.com
+                          hey@example.com
                         </a>
                         {' '}for commercial licensing inquiries.
                       </p>
@@ -1489,10 +1484,10 @@ function LegalContent() {
                         For questions regarding the Service, you can get in touch by
                         emailing us at{' '}
                         <a
-                          href="mailto:info@kortix.com"
+                          href="mailto:info@example.com"
                           className="text-primary hover:underline"
                         >
-                          info@kortix.com
+                          info@example.com
                         </a>
                         .
                       </p>
@@ -1500,10 +1495,10 @@ function LegalContent() {
                         <strong>Legal Matters:</strong> For legal inquiries, DMCA
                         notices, or other legal matters, please contact{' '}
                         <a
-                          href="mailto:legal@kortix.com"
+                          href="mailto:legal@example.com"
                           className="text-primary hover:underline"
                         >
-                          legal@kortix.com
+                          legal@example.com
                         </a>
                         .
                       </p>
@@ -1512,17 +1507,17 @@ function LegalContent() {
                         data privacy requests (access, deletion, portability, etc.),
                         please contact{' '}
                         <a
-                          href="mailto:info@kortix.com"
+                          href="mailto:info@example.com"
                           className="text-primary hover:underline"
                         >
-                          info@kortix.com
+                          info@example.com
                         </a>
                         {' '}with the subject line "Privacy Request" and include details
                         of your request.
                       </p>
                       <p className="text-muted-foreground text-balance mb-6">
-                        <strong>Mailing Address:</strong> The Company AI Corp, 701 Tillery
-                        Street Unit 12-2521, Austin, Texas 78702, United States.
+                        <strong>Mailing Address:</strong> The Company AI Corp, ‹your registered
+                        business address›.
                       </p>
                     </div>
                   ) : (
@@ -1741,10 +1736,10 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance">
                         You can get in touch by emailing us at{' '}
                         <a
-                          href="mailto:info@kortix.com"
+                          href="mailto:info@example.com"
                           className="text-primary hover:underline"
                         >
-                          info@kortix.com
+                          info@example.com
                         </a>
                         .
                       </p>

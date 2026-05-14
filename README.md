@@ -56,6 +56,16 @@ generated automatically on first run.
 
 ---
 
+## Screenshots
+
+![The Company — sign-in](screenshots/login.png)
+
+Regenerate the screenshot set any time with **`pnpm screenshots`** (the web app
+must be running). It captures the public pages out of the box; pass
+`SHOT_AUTH_TOKEN=<token>` to also capture the signed-in dashboard.
+
+---
+
 ## What you get
 
 A full autonomous workforce, organized like a company:

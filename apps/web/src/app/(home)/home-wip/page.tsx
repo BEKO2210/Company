@@ -38,7 +38,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useAuth } from '@/components/AuthProvider';
 import { Reveal } from '@/components/home/reveal';
 
-const INSTALL_CMD = 'curl -fsSL https://kortix.com/install | bash';
+const INSTALL_CMD = 'git clone https://github.com/beko2210/company.git && cd company && ./setup.sh';
 
 /* ─── Google Favicon helper ─── */
 const favicon = (domain: string) =>
@@ -777,7 +777,7 @@ export default function HomeWip() {
             className="group hidden sm:flex items-center gap-2 h-8 px-3 rounded-full hover:bg-foreground/[0.08] transition-colors cursor-pointer"
           >
             <span className="font-mono text-[11px] text-muted-foreground select-none">$</span>
-            <code className="text-[11px] font-mono text-foreground tracking-tight">curl -fsSL kortix.com/install</code>
+            <code className="text-[11px] font-mono text-foreground tracking-tight">git clone … && ./setup.sh</code>
             {copied ? (
               <Check className="size-3 text-emerald-500" />
             ) : (
