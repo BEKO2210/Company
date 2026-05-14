@@ -82,11 +82,21 @@ elif [ "$CODE" = "000" ]; then record "Supabase" "FAIL" "no response on $SUPABAS
 else record "Supabase" "FAIL" "/auth/v1/health returned $CODE"; fi
 
 # ─── 4. Web ─────────────────────────────────────────────────────────────────
-# Fetch the /auth page once: it returns fast AND carries the runtime config
+# Fetch the /auth page: it returns fast AND carries the runtime config
 # (injected by the shared root layout), so we verify status + config together.
-WEB_RESP="$(curl -s -m 25 -w 'HTTPSTATUS:%{http_code}' "$WEB_URL/auth" 2>/dev/null || true)"
-CODE="${WEB_RESP##*HTTPSTATUS:}"
-BODY="${WEB_RESP%HTTPSTATUS:*}"
+# Retry a few times — a freshly-started Next.js dev server compiles the route
+# on the first hit, which can return a slow or incomplete response.
+CODE=""
+BODY=""
+for attempt in 1 2 3 4; do
+  WEB_RESP="$(curl -s -m 25 -w 'HTTPSTATUS:%{http_code}' "$WEB_URL/auth" 2>/dev/null || true)"
+  CODE="${WEB_RESP##*HTTPSTATUS:}"
+  BODY="${WEB_RESP%HTTPSTATUS:*}"
+  if [ "$CODE" = "200" ] && printf '%s' "$BODY" | grep -q '__KORTIX_RUNTIME_CONFIG={"SUPABASE_URL":"http'; then
+    break
+  fi
+  [ "$attempt" -lt 4 ] && sleep 4
+done
 if [ "$CODE" != "200" ]; then
   if [ -z "$CODE" ] || [ "$CODE" = "000" ]; then record "Web" "FAIL" "no response on $WEB_URL — is 'pnpm dev' running?"
   else record "Web" "FAIL" "/auth returned $CODE"; fi
