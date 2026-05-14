@@ -4,7 +4,7 @@ import PartnershipsPageClient from './partnerships-client';
 export const metadata: Metadata = {
   title: 'Partnerships',
   description:
-    'Work with The Company to build autonomous operations for your company. Marko Kraemer and the The Company team come in on retainer and build the same systems we run ourselves — end-to-end, embedded in your operations.',
+    'Work with The Company to build autonomous operations for your company. Marko Kraemer and The Company team come in on retainer and build the same systems we run ourselves — end-to-end, embedded in your operations.',
   keywords:
     'The Company partnerships, AI implementation partner, autonomous operations consulting, agent teams, AI workforce deployment, enterprise AI, joint venture AI',
   openGraph: {

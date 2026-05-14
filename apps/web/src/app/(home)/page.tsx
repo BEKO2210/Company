@@ -103,7 +103,7 @@ export default function Home() {
                 className="h-12 px-8 text-sm rounded-full transition-colors"
                 onClick={handleLaunch}
               >
-                Launch Your The Company<ArrowRight className="ml-1.5 size-3.5" />
+                Launch The Company<ArrowRight className="ml-1.5 size-3.5" />
               </Button>
               <button
                 onClick={handleCopy}
@@ -177,7 +177,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.15}>
           <p className="mt-3 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            A The Company <em>is</em> a company. One shared machine where every agent sees the same filesystem, the same databases, the same history. Context isn&apos;t siloed per tool or per session — it&apos;s shared across the entire system, compounding over time. Coding agents operating inside a full Linux environment are the optimal harness for all knowledge work — not just engineering, but sales, finance, ops, legal, support, and everything in between. We&apos;re building this as our own internal operating system to run our own companies, and open-sourcing the whole thing.
+            The Company <em>is</em> a company. One shared machine where every agent sees the same filesystem, the same databases, the same history. Context isn&apos;t siloed per tool or per session — it&apos;s shared across the entire system, compounding over time. Coding agents operating inside a full Linux environment are the optimal harness for all knowledge work — not just engineering, but sales, finance, ops, legal, support, and everything in between. We&apos;re building this as our own internal operating system to run our own companies, and open-sourcing the whole thing.
           </p>
           </Reveal>
         </section>
@@ -353,7 +353,7 @@ export default function Home() {
             className="px-5 text-xs rounded-full font-medium"
             onClick={handleLaunch}
           >
-            Launch Your The Company<ArrowRight className="ml-1.5 size-3" />
+            Launch The Company<ArrowRight className="ml-1.5 size-3" />
           </Button>
         </div>
       </div>

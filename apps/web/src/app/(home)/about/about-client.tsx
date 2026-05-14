@@ -26,7 +26,7 @@ export default function AboutPageClient() {
           <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg mb-14">
             <Image
               src="/images/team.webp"
-              alt="The The Company team"
+              alt="The Company team"
               fill
               className="object-cover object-top"
               priority

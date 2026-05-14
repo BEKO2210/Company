@@ -5,7 +5,7 @@
  *
  * Used wherever you want to surface a handful of small facts about a
  * resource (path, count, date, owner) in a single line. Children are
- * automatically separated by the The Company dot.
+ * automatically separated by The Company dot.
  *
  *   <InlineMeta>
  *     <span className="font-mono">/workspace/foo</span>

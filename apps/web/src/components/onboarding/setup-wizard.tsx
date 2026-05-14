@@ -146,7 +146,7 @@ function CloudBadge({ text }: { text?: string }) {
   return (
     <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[11px] font-medium mx-auto w-fit">
       <Zap className="h-3 w-3" />
-      {text || 'Included with your The Company credits'}
+      {text || 'Included with your credits'}
     </div>
   );
 }
@@ -173,7 +173,7 @@ function WelcomePane({ onNext }: { onNext: () => void }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         >
-          Welcome to your The Company
+          Welcome to The Company
         </motion.h1>
         <motion.p
           className="text-sm text-muted-foreground/50 leading-relaxed max-w-xs mx-auto"
@@ -664,7 +664,7 @@ function ToolKeysPane({ onNext, onBack }: { onNext: () => void; onBack: () => vo
               Your agent uses tools like web search, scraping, and image generation to complete tasks.
             </p>
           </div>
-          {isCloud && <CloudBadge text="Included with your The Company credits" />}
+          {isCloud && <CloudBadge text="Included with your credits" />}
         </div>
 
         {/* Info box */}
@@ -842,7 +842,7 @@ function PipedreamPane({ onNext, onBack }: { onNext: () => void; onBack: () => v
               </a>.
             </p>
           </div>
-          {isCloud && <CloudBadge text="Included with your The Company credits" />}
+          {isCloud && <CloudBadge text="Included with your credits" />}
         </div>
 
         {/* Info box */}
@@ -953,7 +953,7 @@ function GetStartedPane({ onNext, onBack }: { onNext: () => void; onBack: () => 
         <div className="space-y-1.5">
           <h2 className="text-lg font-medium text-foreground/90">You&apos;re all set</h2>
           <p className="text-sm text-muted-foreground/50 leading-relaxed max-w-xs mx-auto">
-            Your The Company agent is configured and ready. We&apos;ll walk you through the basics in a quick guided conversation.
+            Your agent is configured and ready. We&apos;ll walk you through the basics in a quick guided conversation.
           </p>
         </div>
       </div>

@@ -564,7 +564,7 @@ export function isPreviewUrl(url: string): boolean {
 const WEB_PROXY_PATH_PREFIX = '/web-proxy/';
 
 /**
- * Build a web proxy URL that routes through the The Company Master (port 8000)
+ * Build a web proxy URL that routes through The Company Master (port 8000)
  * which hosts the /web-proxy/ forward proxy.
  *
  * The web proxy lives on The Company Master, NOT the OpenCode server, so we

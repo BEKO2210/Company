@@ -1763,7 +1763,7 @@ function TransactionsTab() {
             <div>
                 <h3 className="text-lg font-medium tracking-tight mb-0.5">Credit ledger</h3>
                 <p className="text-sm text-muted-foreground">
-                    Ledger-backed account events from the The Company schema: purchases, grants, usage, expirations, refunds, and bonuses.
+                    Ledger-backed account events from The Company schema: purchases, grants, usage, expirations, refunds, and bonuses.
                 </p>
             </div>
             <CreditTransactions />

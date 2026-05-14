@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: '/images/team.webp',
         width: 1200,
         height: 675,
-        alt: 'The The Company team',
+        alt: 'The Company team',
       },
     ],
   },

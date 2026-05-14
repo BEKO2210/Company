@@ -305,7 +305,7 @@ export function SelfHostedForm({ returnUrl, installed }: SelfHostedFormProps) {
         window.location.href = safeReturnUrl;
         return;
       } else {
-        setErrorMessage('This instance still needs its initial owner account. Run the The Company installer/CLI bootstrap first.');
+        setErrorMessage('This instance still needs its initial owner account. Run The Company installer/CLI bootstrap first.');
         setPending(false);
       }
     } catch (err: any) {

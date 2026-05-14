@@ -164,7 +164,7 @@ export default function Variant2Home() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                A The Company is a cloud computer where AI agents do the actual work of running a company. You connect your tools, define your agents, set their schedules and triggers — and the machine operates whether you&apos;re there or not. Persistent memory that compounds. A workforce that never stops.
+                The Company is a cloud computer where AI agents do the actual work of running a company. You connect your tools, define your agents, set their schedules and triggers — and the machine operates whether you&apos;re there or not. Persistent memory that compounds. A workforce that never stops.
               </p>
             </Reveal>
           </div>
@@ -225,7 +225,7 @@ export default function Variant2Home() {
                 </Reveal>
                 <Reveal delay={0.1}>
                   <p className="text-base text-muted-foreground leading-relaxed mb-8">
-                    The Company runs on <a href="https://opencode.ai" target="_blank" rel="noopener noreferrer" className="hover:text-foreground/80 transition-colors">OpenCode</a>, an open foundation for building knowledge work agents, with the The Company cognitive architecture layered on top. Everything is just files.
+                    The Company runs on <a href="https://opencode.ai" target="_blank" rel="noopener noreferrer" className="hover:text-foreground/80 transition-colors">OpenCode</a>, an open foundation for building knowledge work agents, with The Company cognitive architecture layered on top. Everything is just files.
                   </p>
                 </Reveal>
                 <Reveal delay={0.2}>

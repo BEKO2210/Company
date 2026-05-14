@@ -25,7 +25,7 @@ export default function PricingPage() {
             One machine, one subscription. Priced by the specs you need.
           </p>
           <Button size="lg" className="px-10" onClick={() => openNewInstanceModal()}>
-            Get Your The Company <ArrowRight className="ml-2 size-4" />
+            Get Your Instance <ArrowRight className="ml-2 size-4" />
           </Button>
         </motion.div>
 

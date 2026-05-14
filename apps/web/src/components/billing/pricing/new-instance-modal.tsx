@@ -96,7 +96,7 @@ export function NewInstanceModal({ open, onOpenChange, returnUrl, title }: NewIn
       });
       if (response.url || response.checkout_url) { window.location.href = response.url || response.checkout_url!; return; }
       if (response.status === 'subscription_created' || response.status === 'no_change') {
-        toast.success(response.message || 'Your The Company is on its way');
+        toast.success(response.message || 'Your instance is on its way');
         onOpenChange(false);
         window.location.href = '/dashboard?subscription=success';
         return;
@@ -138,7 +138,7 @@ export function NewInstanceModal({ open, onOpenChange, returnUrl, title }: NewIn
           {/* Hero */}
           <div className="flex flex-col items-center pt-7 pb-5 px-6 border-b border-border bg-neutral-50/50 dark:bg-neutral-950/50">
             <Image src="/kortix-computer.png" alt="The Company Computer" width={140} height={140} className="object-contain mb-4" priority />
-            <h2 className="text-xl font-semibold tracking-tight text-foreground text-center">{title || 'Your The Company'}</h2>
+            <h2 className="text-xl font-semibold tracking-tight text-foreground text-center">{title || 'Your instance'}</h2>
             <p className="text-sm text-muted-foreground mt-1 text-center max-w-[280px]">
               One machine. All your tools. Agents that run themselves.
             </p>
@@ -241,7 +241,7 @@ export function NewInstanceModal({ open, onOpenChange, returnUrl, title }: NewIn
             <p className="text-[11px] text-muted-foreground/60 mt-0.5">Cancel anytime</p>
           </div>
           <Button className="h-11 px-7 text-sm font-semibold" disabled={isLoading || !selected} onClick={handleCta}>
-            {isLoading ? <Loader2 className="size-4 animate-spin" /> : <>Get Your The Company<ArrowRight className="size-3.5 ml-1.5" /></>}
+            {isLoading ? <Loader2 className="size-4 animate-spin" /> : <>Get Your Instance<ArrowRight className="size-3.5 ml-1.5" /></>}
           </Button>
         </div>
       </div>

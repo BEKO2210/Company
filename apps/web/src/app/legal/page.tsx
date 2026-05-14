@@ -190,12 +190,12 @@ function LegalContent() {
                           Unit 12-2521, Austin, Texas 78702, United States.
                         </li>
                         <li>
-                          "Site" refers to the The Company website, including any related
+                          "Site" refers to The Company website, including any related
                           features, content, or applications offered from time to
                           time by the Company.
                         </li>
                         <li>
-                          "Service" refers to the The Company platform and all related
+                          "Service" refers to The Company platform and all related
                           services provided by the Company, including the platform
                           for building, managing, and training autonomous AI agents,
                           browser automation, file management, web intelligence,
@@ -1241,7 +1241,7 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-6">
                         The Service software is available for self-hosting on your own
                         infrastructure, subject to the terms of the LICENSE file in our
-                        GitHub repository. Self-hosting is governed by the The Company Public
+                        GitHub repository. Self-hosting is governed by The Company Public
                         Source License (KPSL), which includes restrictions on
                         network-accessible deployments and commercial use. For
                         network-accessible deployments or commercial use beyond the

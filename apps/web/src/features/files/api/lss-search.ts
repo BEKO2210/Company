@@ -1,5 +1,5 @@
 /**
- * LSS (Local Semantic Search) API — semantic search via the The Company Master endpoint.
+ * LSS (Local Semantic Search) API — semantic search via The Company Master endpoint.
  *
  * Calls the `/lss/search` route on The Company Master, which spawns the `lss` CLI
  * (BM25 + embeddings) and returns JSON results with file paths, scores, and snippets.

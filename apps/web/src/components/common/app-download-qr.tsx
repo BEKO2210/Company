@@ -27,7 +27,7 @@ export interface AppDownloadQRProps {
   size?: number;
   /** Additional class names for the container */
   className?: string;
-  /** Whether to show the The Company logo in the center */
+  /** Whether to show The Company logo in the center */
   showLogo?: boolean;
   /** Size of the center logo */
   logoSize?: number;
