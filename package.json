@@ -1,6 +1,7 @@
 {
   "name": "kortix",
   "private": true,
+  "author": "Belkis Aslani",
   "scripts": {
     "dev": "bash scripts/dev-local.sh",
     "doctor": "bash scripts/doctor.sh",

@@ -146,3 +146,7 @@ supabase/       database migrations
 ## License
 
 See [LICENSE](LICENSE).
+
+---
+
+Developed by Belkis Aslani.

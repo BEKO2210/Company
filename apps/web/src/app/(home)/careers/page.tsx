@@ -1,35 +1,19 @@
 import type { Metadata } from 'next';
 import CareersPageClient from './careers-client';
 
+// TEMPLATE PLACEHOLDER — replace with your company's own Careers metadata.
 export const metadata: Metadata = {
   title: 'Careers',
-  description:
-    'Join a small, tight-knit team building the operating system for autonomous companies. We hire founders, builders, and craftspeople who turn chaos into systems that run themselves. San Francisco and remote.',
-  keywords:
-    'The Company careers, The Company jobs, AI startup jobs, autonomous company jobs, San Francisco AI jobs, agent engineering, startup hiring',
+  description: 'Open roles at this company — a template page, ready for your listings.',
+  keywords: 'careers, jobs, hiring',
   openGraph: {
-    title: 'Careers at The Company – Build the Autonomous Company OS',
-    description:
-      'An extremely small, tight-knit team building the operating system for autonomous companies. Founders, builders, hackers, engineers — we care that you\'ve built something real.',
-    url: 'https://www.kortix.com/careers',
-    images: [
-      {
-        url: '/images/careers/shackleton.png',
-        width: 380,
-        height: 253,
-        alt: 'Careers at The Company',
-      },
-    ],
+    title: 'Careers',
+    description: 'Open roles at this company — a template page, ready for your listings.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Careers at The Company – Build the Autonomous Company OS',
-    description:
-      'An extremely small, tight-knit team building the operating system for autonomous companies. Founders, builders, hackers, engineers — we care that you\'ve built something real.',
-    images: ['/images/careers/shackleton.png'],
-  },
-  alternates: {
-    canonical: 'https://www.kortix.com/careers',
+    title: 'Careers',
+    description: 'Open roles at this company — a template page, ready for your listings.',
   },
 };
 
