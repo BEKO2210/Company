@@ -64,6 +64,8 @@ dump.rdb
 **/.prompts/
 .cwc/
 test/
+test-results/
+playwright-report/
 
 # Core runtime data
 .kortix/
