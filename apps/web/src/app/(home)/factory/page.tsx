@@ -1,35 +1,19 @@
 import type { Metadata } from 'next';
 import FactoryPageClient from './factory-client';
 
+// TEMPLATE PLACEHOLDER — replace with your company's own content.
 export const metadata: Metadata = {
-  title: 'The Autonomy Factory',
-  description:
-    'We build self-driving companies. The playbook for migrating from human-operated to AI-operated. 76% agents, 24% humans.',
-  keywords:
-    'The Company, autonomous company, self-driving company, AI-operated, autonomy factory, agent workforce, playbook, company automation',
+  title: 'Factory',
+  description: 'A template page, ready for your content.',
+  keywords: 'company, autonomous company',
   openGraph: {
-    title: 'The Autonomy Factory — The Company',
-    description:
-      'We build self-driving companies. The playbook for migrating from human-operated to AI-operated. 76% agents, 24% humans.',
-    url: 'https://www.kortix.com/factory',
-    images: [
-      {
-        url: '/images/team.webp',
-        width: 1200,
-        height: 675,
-        alt: 'The Company team',
-      },
-    ],
+    title: 'Factory',
+    description: 'A template page, ready for your content.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Autonomy Factory — The Company',
-    description:
-      'We build self-driving companies. The playbook for migrating from human-operated to AI-operated. 76% agents, 24% humans.',
-    images: ['/images/team.webp'],
-  },
-  alternates: {
-    canonical: 'https://www.kortix.com/factory',
+    title: 'Factory',
+    description: 'A template page, ready for your content.',
   },
 };
 

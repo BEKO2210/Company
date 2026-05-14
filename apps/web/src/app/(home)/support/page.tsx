@@ -60,7 +60,7 @@ function SupportPageContent() {
         <Reveal delay={0.08}>
           <p className="text-base text-muted-foreground leading-relaxed max-w-xl">
             Email us at{' '}
-            <a href="mailto:support@kortix.com" className={linkClass}>support@kortix.com</a>.
+            <a href="mailto:support@example.com" className={linkClass}>support@example.com</a>.
             {' '}We typically respond within 24 hours on business days.
           </p>
         </Reveal>
@@ -87,13 +87,13 @@ function SupportPageContent() {
               <FAQItem
                 question="How do I request a feature or report a bug?"
                 answer={
-                  <>Email <a href="mailto:support@kortix.com" className={linkClass}>support@kortix.com</a> with details. For bugs, include steps to reproduce and any error messages. Screenshots help.</>
+                  <>Email <a href="mailto:support@example.com" className={linkClass}>support@example.com</a> with details. For bugs, include steps to reproduce and any error messages. Screenshots help.</>
                 }
               />
               <FAQItem
                 question="What if I don't get credits after paying?"
                 answer={
-                  <>Contact <a href="mailto:support@kortix.com" className={linkClass}>support@kortix.com</a> immediately. We prioritize billing issues and typically resolve them within a few hours.</>
+                  <>Contact <a href="mailto:support@example.com" className={linkClass}>support@example.com</a> immediately. We prioritize billing issues and typically resolve them within a few hours.</>
                 }
               />
             </div>
@@ -108,7 +108,7 @@ function SupportPageContent() {
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed mb-4">
               To delete your account, either email{' '}
-              <a href="mailto:support@kortix.com" className={linkClass}>support@kortix.com</a>
+              <a href="mailto:support@example.com" className={linkClass}>support@example.com</a>
               {' '}or do it yourself from settings:
             </p>
             <ol className="text-sm text-muted-foreground leading-relaxed space-y-2 list-decimal ml-4">
@@ -150,11 +150,11 @@ function SupportPageContent() {
               Still need help? Reach out.
             </p>
             <div className="flex flex-col gap-1.5 mt-3">
-              <a href="mailto:support@kortix.com" className={`text-base ${linkClass} w-fit`}>
-                support@kortix.com
+              <a href="mailto:support@example.com" className={`text-base ${linkClass} w-fit`}>
+                support@example.com
               </a>
-              <a href="mailto:security@kortix.com" className={`text-base ${linkClass} w-fit`}>
-                security@kortix.com
+              <a href="mailto:security@example.com" className={`text-base ${linkClass} w-fit`}>
+                security@example.com
               </a>
             </div>
           </div>

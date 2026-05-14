@@ -46,7 +46,7 @@ const favicon = (domain: string) =>
 
 /* ───────────────────────────────────────────────────────────────
    PLACEHOLDER MEDIA SLOTS
-   Renders a labeled box telling Marko exactly what to drop in.
+   Renders a labeled box telling the editor exactly what to drop in.
    Replace `src` (or swap to <video>/<img>) once recordings/screens are ready.
    ─────────────────────────────────────────────────────────────── */
 function MediaPlaceholder({
