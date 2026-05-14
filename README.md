@@ -1,6 +1,11 @@
-# The Company
+<p align="center">
+  <img src="apps/web/public/the-company-logo.png" alt="The Company" width="140" />
+</p>
 
-**A clone-and-run template for your own autonomous company.**
+<h1 align="center">The Company</h1>
+
+<p align="center"><strong>A clone-and-run template for your own autonomous company.</strong></p>
+
 
 Clone this repo, run one command, and you have a company: a cloud computer where
 AI agents do real work — research, content, sales, finance, support, code — for
