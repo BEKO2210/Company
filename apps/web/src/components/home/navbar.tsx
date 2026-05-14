@@ -209,8 +209,9 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
         {/* Left — Logo (right-click for brand assets) */}
         <ContextMenu>
           <ContextMenuTrigger asChild>
-            <Link href="/" className="flex items-center shrink-0">
-              <KortixLogo size={18} variant='logomark' />
+            <Link href="/" className="flex items-center gap-2 shrink-0">
+              <KortixLogo size={26} />
+              <span className="text-[15px] font-semibold tracking-tight">The Company</span>
             </Link>
           </ContextMenuTrigger>
           <ContextMenuContent className="w-48">

@@ -8,29 +8,17 @@ interface KortixLogoProps {
   className?: string;
 }
 
+// The Company logo — a full-colour emblem (black + gold). Unlike the old
+// monochrome marks it is NOT inverted for dark mode. One emblem asset covers
+// both the `symbol` and `logomark` slots.
 export function KortixLogo({ size = 24, variant = 'symbol', className }: KortixLogoProps) {
-  // For logomark variant, use logomark-white.svg which is already white
-  // and invert it for light mode using CSS (no JS needed)
-  if (variant === 'logomark') {
-    return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src="/logomark-white.svg"
-        alt="The Company"
-        className={cn('invert dark:invert-0 flex-shrink-0', className)}
-        style={{ height: `${size}px`, width: 'auto' }}
-        suppressHydrationWarning
-      />
-    );
-  }
-
-  // Default symbol variant behavior - invert for dark mode
+  void variant;
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src="/kortix-symbol.svg"
+      src="/the-company-logo.png"
       alt="The Company"
-      className={cn('dark:invert flex-shrink-0', className)}
+      className={cn('flex-shrink-0 object-contain', className)}
       style={{ width: `${size}px`, height: `${size}px` }}
       suppressHydrationWarning
     />
