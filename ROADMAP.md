@@ -55,9 +55,25 @@ actually takes effect: a `CONTEXT.md` the orchestrator reads.
 
 ## Phase 3 — Polish
 
-- [ ] Final README/docs pass.
-- [ ] `pnpm doctor` — diagnose a broken setup.
-- [ ] Optional: a "choose your workforce" onboarding step.
+- [x] `pnpm doctor` (`scripts/doctor.sh`) — diagnoses tools, Docker, config,
+      env files, database, sandbox image and company wiring; for every problem
+      it prints the exact fix. The "something is wrong, what do I do" tool.
+- [x] Final README pass — documents the doctor/smoke/test:agents trio and
+      points users at `pnpm doctor` first when something breaks.
+- [ ] *Deferred — not polish:* a "choose your workforce" onboarding step is a
+      real frontend feature (new React flow), not a finishing touch, and can't
+      be verified in a sandboxless environment. Left as a future phase rather
+      than shipped half-tested.
+
+## The verification trio
+
+The whole point of Phases 1-3: you never have to guess whether it works.
+
+| Command | Answers |
+|---|---|
+| `pnpm doctor` | Is my machine + config set up right? (prints fixes) |
+| `pnpm smoke` | Is the company wired up and running? |
+| `pnpm test:agents` | Do the agents actually delegate and deliver? |
 
 ---
 

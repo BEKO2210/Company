@@ -83,14 +83,24 @@ A full autonomous workforce, organized like a company:
 pnpm dev                   # start web + API
 pnpm dev:core:build        # build & start the agent sandbox
 pnpm nuke                  # tear down the local environment
-
-pnpm smoke                 # verify every layer is wired up and running
-pnpm verify:company        # check the company wiring (agents + delegation graph)
-pnpm test:agents           # live test: prove the agents delegate and deliver
 ```
 
 To re-run setup safely at any time: `./setup.sh` is idempotent — it keeps your
 `.env`, regenerates the per-service env files, and skips work already done.
+
+## Checking that it works
+
+Three commands, each answering a different question:
+
+```bash
+pnpm doctor                # is my machine + config set up right?  (prints fixes)
+pnpm smoke                 # is the company wired up and running?
+pnpm test:agents           # do the agents actually delegate and deliver?
+pnpm verify:company        # (part of `pnpm smoke`) just the agent/delegation wiring
+```
+
+If something is wrong, **start with `pnpm doctor`** — for every problem it
+prints the exact command to fix it.
 
 ---
 

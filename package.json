@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "bash scripts/dev-local.sh",
+    "doctor": "bash scripts/doctor.sh",
     "smoke": "bash scripts/smoke-test.sh",
     "verify:company": "bash scripts/verify-company.sh",
     "test:agents": "bash scripts/agent-e2e.sh",
