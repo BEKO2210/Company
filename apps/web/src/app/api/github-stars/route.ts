@@ -14,6 +14,7 @@ export async function GET() {
     const data = await res.json();
     return NextResponse.json({ stars: data.stargazers_count });
   } catch {
-    return NextResponse.json({ stars: 20000 });
+    // GitHub unreachable — report 0 rather than a fabricated count
+    return NextResponse.json({ stars: 0 });
   }
 }

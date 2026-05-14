@@ -158,7 +158,7 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
   const lastScrollY = useRef(0);
 
   const filteredNavLinks = siteConfig.nav.links;
-  const { formattedStars, loading: starsLoading } = useGitHubStars('kortix-ai', 'kortix');
+  const { formattedStars, loading: starsLoading } = useGitHubStars('beko2210', 'company');
 
   const ctaLink = '/auth';
 

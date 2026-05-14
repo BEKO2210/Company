@@ -13,7 +13,8 @@ export function useGitHubStars(_owner?: string, _repo?: string) {
         const data = await res.json();
         setStars(data.stars);
       } catch {
-        setStars(20000);
+        // request failed — show 0, never a fabricated count
+        setStars(0);
       } finally {
         setLoading(false);
       }
