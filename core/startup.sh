@@ -147,6 +147,26 @@ if [ -L /workspace/.opencode ]; then
   fi
 fi
 
+# ── Seed the workspace from the shipped company template ────────────────────
+# The template ships in the image at
+#   /ephemeral/kortix-master/opencode/workspace-template/
+# and defines the company (.kortix/CONTEXT.md, etc). Per-file guarded copy:
+# only files that do NOT already exist are seeded, so an existing workspace or
+# a container restart is never overwritten — only a genuinely fresh workspace
+# gets populated.
+WORKSPACE_TEMPLATE="/ephemeral/kortix-master/opencode/workspace-template"
+if [ -d "$WORKSPACE_TEMPLATE" ]; then
+  ( cd "$WORKSPACE_TEMPLATE" && find . -type f -print ) | while IFS= read -r rel; do
+    rel="${rel#./}"
+    dst="/workspace/$rel"
+    if [ ! -e "$dst" ]; then
+      mkdir -p "$(dirname "$dst")"
+      cp "$WORKSPACE_TEMPLATE/$rel" "$dst" 2>/dev/null \
+        && echo "[startup] Seeded workspace file from template: $rel"
+    fi
+  done
+fi
+
 chmod 700 "$(dirname "$SECRET_FILE_PATH")" 2>/dev/null || true
 
 # ── Convenience symlink: opencode → .opencode ───────────────────────────────

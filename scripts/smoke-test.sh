@@ -46,8 +46,14 @@ record() {
   return 0
 }
 
+# ─── 0. company wiring (file-level — runs even with no services up) ─────────
+# The smoke test covers both: is the company correctly wired, AND is it running.
+if [ -x scripts/verify-company.sh ]; then
+  bash scripts/verify-company.sh || CRITICAL_FAIL=1
+fi
+
 echo
-echo "${BOLD}Smoke test — checking your company${RESET}"
+echo "${BOLD}Smoke test — checking the running services${RESET}"
 echo "${DIM}  web=$WEB_URL  api=$API_URL  db=$SUPABASE_URL${RESET}"
 
 # ─── 1. API ─────────────────────────────────────────────────────────────────

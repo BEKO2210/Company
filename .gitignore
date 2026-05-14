@@ -74,6 +74,10 @@ apps/api/.sandbox-auth-token.json
 core/kortix-master/opencode/.kortix/
 **/.buildx-cache/
 
+# ...but the shipped company template IS source — keep it tracked.
+!core/kortix-master/opencode/workspace-template/.kortix/
+!core/kortix-master/opencode/workspace-template/.kortix/**
+
 .nx/
 .pulumi
 .pulumi/

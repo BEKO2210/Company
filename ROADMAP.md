@@ -31,12 +31,27 @@ is called done.
 
 ## Phase 2 — Ship a working company *(the actual feature)*
 
-- [ ] Default role agents shipped with the template (orchestrator/"CEO" plus
-      worker roles like researcher, writer, analyst, developer) — these are
-      Markdown files, not database rows.
-- [ ] A starter `.kortix/CONTEXT.md` describing the company.
-- [ ] A copy-on-setup step so every clone's workspace gets this structure — a
-      clone is a staffed company, not an empty shell.
+Research finding that shaped this phase: the runtime's delegation always
+spawns the generic `worker` agent — there is no mechanism for the orchestrator
+to delegate to named role-agent files. Shipping `researcher.md` / `writer.md`
+etc. would be dead code nothing ever calls. So the company is defined where it
+actually takes effect: a `CONTEXT.md` the orchestrator reads.
+
+- [x] `CONTEXT.md` company template
+      (`core/kortix-master/opencode/workspace-template/.kortix/CONTEXT.md`) —
+      defines the company, its departments/roles (which the orchestrator uses
+      to brief workers), and operating principles.
+- [x] Copy-on-boot seeding in `core/startup.sh` — every fresh clone's
+      workspace gets the template (per-file guarded; never overwrites).
+- [x] **Logic check** (`scripts/verify-company.sh`, `pnpm verify:company`) —
+      validates every agent definition is structurally sound AND the
+      delegation graph is intact (`worker` / `project-maintainer` exist and
+      are enabled, the orchestrator can delegate). Runs anywhere; folded into
+      `pnpm smoke`.
+- [x] **Live agent test** (`scripts/agent-e2e.sh`, `pnpm test:agents`) — gives
+      the orchestrator a real task and proves it delegates to a worker, the
+      worker delivers, and the real side effect lands. Runs where the sandbox
+      is up.
 
 ## Phase 3 — Polish
 

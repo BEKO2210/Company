@@ -83,6 +83,10 @@ A full autonomous workforce, organized like a company:
 pnpm dev                   # start web + API
 pnpm dev:core:build        # build & start the agent sandbox
 pnpm nuke                  # tear down the local environment
+
+pnpm smoke                 # verify every layer is wired up and running
+pnpm verify:company        # check the company wiring (agents + delegation graph)
+pnpm test:agents           # live test: prove the agents delegate and deliver
 ```
 
 To re-run setup safely at any time: `./setup.sh` is idempotent — it keeps your
