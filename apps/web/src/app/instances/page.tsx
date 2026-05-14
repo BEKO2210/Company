@@ -221,7 +221,7 @@ export default function InstancesPage() {
           {canClaimComputer && (
             <div className="mb-4">
               <ComputerHeroCard
-                title="Kortix is now even better"
+                title="The Company is now even better"
                 description={
                   <>
                     Your plan now includes a dedicated cloud computer

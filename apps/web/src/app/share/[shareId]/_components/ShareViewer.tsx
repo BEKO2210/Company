@@ -174,7 +174,7 @@ export function ShareViewer({ shareId }: { shareId: string }) {
 
   return (
     <div className="flex flex-col h-screen bg-background">
-      {/* ── Header (matches Suna thread-site-header variant="shared") ── */}
+      {/* ── Header (matches The Company thread-site-header variant="shared") ── */}
       <ShareHeader sessionTitle={session.title} />
 
       {/* ── Message list ── */}
@@ -202,7 +202,7 @@ export function ShareViewer({ shareId }: { shareId: string }) {
 }
 
 // ============================================================================
-// Header — matches Suna SiteHeader variant="shared"
+// Header — matches The Company SiteHeader variant="shared"
 // ============================================================================
 
 function ShareHeader({ sessionTitle }: { sessionTitle: string }) {
@@ -259,7 +259,7 @@ function ShareHeader({ sessionTitle }: { sessionTitle: string }) {
 }
 
 // ============================================================================
-// Message views — matches Suna UserMessageRow + AssistantGroupRow
+// Message views — matches The Company UserMessageRow + AssistantGroupRow
 // ============================================================================
 
 function ShareMessageView({
@@ -279,7 +279,7 @@ function ShareMessageView({
   return <AssistantBlock parts={parts} aggregatedText={text} />;
 }
 
-// ── User message bubble (matches Suna UserMessageRow) ──
+// ── User message bubble (matches The Company UserMessageRow) ──
 
 function UserBubble({ text }: { text: string }) {
   return (
@@ -293,7 +293,7 @@ function UserBubble({ text }: { text: string }) {
   );
 }
 
-// ── Assistant message block (matches Suna AssistantGroupRow) ──
+// ── Assistant message block (matches The Company AssistantGroupRow) ──
 
 function AssistantBlock({
   parts,
@@ -304,12 +304,12 @@ function AssistantBlock({
 }) {
   return (
     <div className="flex flex-col gap-2">
-      {/* Agent header — Kortix logomark (matches Suna AgentHeader for name="Kortix") */}
+      {/* Agent header — The Company logomark (matches The Company AgentHeader for name="The Company") */}
       <div className="flex items-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/kortix-logomark-white.svg"
-          alt="Kortix"
+          alt="The Company"
           className="dark:invert-0 invert flex-shrink-0"
           style={{ height: '12px', width: 'auto' }}
         />
@@ -328,7 +328,7 @@ function AssistantBlock({
             );
           })}
 
-          {/* Message actions — Copy + Thumbs (matches Suna MessageActions) */}
+          {/* Message actions — Copy + Thumbs (matches The Company MessageActions) */}
           <MessageActions text={aggregatedText} />
         </div>
       </div>
@@ -337,7 +337,7 @@ function AssistantBlock({
 }
 
 // ============================================================================
-// MessageActions — matches Suna MessageActions component
+// MessageActions — matches The Company MessageActions component
 // ============================================================================
 
 function MessageActions({ text, className }: { text: string; className?: string }) {

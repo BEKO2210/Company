@@ -255,7 +255,7 @@ function ConfigDegradationPanel({
       <div className="text-[11px] text-muted-foreground">
         {taskTargetLabel
           ? `The fix task will be created and started in ${taskTargetLabel}.`
-          : 'If this instance has no project yet, Kortix will create a Workspace project automatically before starting the fix task.'}
+          : 'If this instance has no project yet, The Company will create a Workspace project automatically before starting the fix task.'}
       </div>
     </section>
   );
@@ -1418,14 +1418,14 @@ export function InstanceSettingsModal({
               <div className="rounded-xl border border-border/60 bg-muted/10 p-4 space-y-3">
                 <div className="text-sm font-medium">Deep debugging</div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  If you SSH into the host machine itself, you can inspect the running Kortix container directly. Typical flow: run <span className="font-mono text-foreground">docker ps</span>, identify the <span className="font-mono text-foreground">kortix/computer</span> container or <span className="font-mono text-foreground">justavps-workload</span> name, then exec into it for full root access inside the container.
+                  If you SSH into the host machine itself, you can inspect the running The Company container directly. Typical flow: run <span className="font-mono text-foreground">docker ps</span>, identify the <span className="font-mono text-foreground">kortix/computer</span> container or <span className="font-mono text-foreground">justavps-workload</span> name, then exec into it for full root access inside the container.
                 </p>
                 <div className="grid gap-3 md:grid-cols-2">
                   <CopyField label="List running containers" value="docker ps" />
-                  <CopyField label="Open running Kortix container" value="docker exec -it justavps-workload bash" />
+                  <CopyField label="Open running The Company container" value="docker exec -it justavps-workload bash" />
                 </div>
                 <div className="rounded-lg border border-border/60 bg-background/60 px-3 py-2 text-[11px] text-muted-foreground">
-                  Inside the container, you can inspect <span className="font-mono text-foreground">/workspace</span>, verify runtime state, and debug the live Kortix environment directly.
+                  Inside the container, you can inspect <span className="font-mono text-foreground">/workspace</span>, verify runtime state, and debug the live The Company environment directly.
                 </div>
               </div>
           </div>

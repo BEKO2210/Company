@@ -98,7 +98,7 @@ function LegalContent() {
                       </h3>
                       <div className="text-muted-foreground mb-6 space-y-2">
                         <p>
-                          <strong>Kortix AI Corp</strong>
+                          <strong>The Company AI Corp</strong>
                         </p>
                         <p>Incorporated in Delaware, United States</p>
                         <p className="mt-4">
@@ -136,7 +136,7 @@ function LegalContent() {
                         Responsible for Content
                       </h3>
                       <p className="text-muted-foreground mb-6">
-                        Kortix AI Corp is responsible for the content of this
+                        The Company AI Corp is responsible for the content of this
                         website in accordance with applicable laws.
                       </p>
 
@@ -172,11 +172,11 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-6">
                         PLEASE READ THESE TERMS OF USE ("AGREEMENT" OR "TERMS OF
                         USE" or "TERMS OF SERVICE" or "TERMS AND CONDITIONS")
-                        CAREFULLY BEFORE USING THE SERVICES OFFERED BY Kortix AI
+                        CAREFULLY BEFORE USING THE SERVICES OFFERED BY The Company AI
                         Corp, a Delaware corporation with its principal place of business
                         at 701 Tillery Street Unit 12-2521, Austin, Texas 78702, United States
                         ("Company"). THIS AGREEMENT SETS FORTH THE LEGALLY
-                        BINDING TERMS AND CONDITIONS FOR YOUR USE OF THE Kortix
+                        BINDING TERMS AND CONDITIONS FOR YOUR USE OF THE The Company
                         WEBSITE AND ALL RELATED SERVICES.
                       </p>
 
@@ -185,17 +185,17 @@ function LegalContent() {
                       </h3>
                       <ul className="text-muted-foreground space-y-1 mb-6">
                         <li>
-                          "Company" refers to Kortix AI Corp, a Delaware corporation
+                          "Company" refers to The Company AI Corp, a Delaware corporation
                           with its principal place of business at 701 Tillery Street
                           Unit 12-2521, Austin, Texas 78702, United States.
                         </li>
                         <li>
-                          "Site" refers to the Kortix website, including any related
+                          "Site" refers to the The Company website, including any related
                           features, content, or applications offered from time to
                           time by the Company.
                         </li>
                         <li>
-                          "Service" refers to the Kortix platform and all related
+                          "Service" refers to the The Company platform and all related
                           services provided by the Company, including the platform
                           for building, managing, and training autonomous AI agents,
                           browser automation, file management, web intelligence,
@@ -321,7 +321,7 @@ function LegalContent() {
                         Description of Service
                       </h3>
                       <p className="text-muted-foreground text-balance mb-4">
-                        Kortix is a complete platform for creating, managing, and
+                        The Company is a complete platform for creating, managing, and
                         training autonomous AI agents. The Service enables Users to
                         build sophisticated AI agents that can work autonomously
                         on their behalf. The platform provides:
@@ -621,12 +621,12 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-6">
                         For the full license terms, please refer to the LICENSE file in our GitHub repository:{' '}
                         <a
-                          href="https://github.com/kortix-ai/suna/blob/main/LICENSE"
+                          href="https://github.com/beko2210/company/blob/main/LICENSE"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary hover:underline"
                         >
-                          github.com/kortix-ai/suna/blob/main/LICENSE
+                          github.com/beko2210/company/blob/main/LICENSE
                         </a>
                       </p>
 
@@ -1241,7 +1241,7 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-6">
                         The Service software is available for self-hosting on your own
                         infrastructure, subject to the terms of the LICENSE file in our
-                        GitHub repository. Self-hosting is governed by the Kortix Public
+                        GitHub repository. Self-hosting is governed by the The Company Public
                         Source License (KPSL), which includes restrictions on
                         network-accessible deployments and commercial use. For
                         network-accessible deployments or commercial use beyond the
@@ -1292,7 +1292,7 @@ function LegalContent() {
                         Trademarks and Patents
                       </h3>
                       <p className="text-muted-foreground text-balance mb-6">
-                        All Kortix logos, marks, and designations are trademarks or
+                        All The Company logos, marks, and designations are trademarks or
                         registered trademarks of the Company. All other trademarks
                         mentioned on this website are the property of their
                         respective owners. The trademarks and logos displayed on
@@ -1447,14 +1447,14 @@ function LegalContent() {
                       <p className="text-muted-foreground text-balance mb-6">
                         ALL USE OF THE SERVICE AND ANY CONTENT IS UNDERTAKEN
                         ENTIRELY AT YOUR OWN RISK. THE SERVICE (INCLUDING, WITHOUT
-                        LIMITATION, THE Kortix WEB APP AND ANY CONTENT) IS PROVIDED
+                        LIMITATION, THE The Company WEB APP AND ANY CONTENT) IS PROVIDED
                         "AS IS" AND "AS AVAILABLE" AND IS WITHOUT WARRANTY OF ANY
                         KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
                         THE IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT,
                         MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE, AND
                         ANY WARRANTIES IMPLIED BY ANY COURSE OF PERFORMANCE OR
                         USAGE OF TRADE, ALL OF WHICH ARE EXPRESSLY DISCLAIMED.
-                        Kortix DOES NOT GUARANTEE THE ACCURACY, COMPLETENESS, OR
+                        The Company DOES NOT GUARANTEE THE ACCURACY, COMPLETENESS, OR
                         RELIABILITY OF THE AI-GENERATED CONTENT, AND USERS ASSUME
                         FULL RESPONSIBILITY FOR ANY APPLICATIONS CREATED USING THE
                         SERVICE. SOME STATES DO NOT ALLOW LIMITATIONS ON HOW LONG
@@ -1521,7 +1521,7 @@ function LegalContent() {
                         of your request.
                       </p>
                       <p className="text-muted-foreground text-balance mb-6">
-                        <strong>Mailing Address:</strong> Kortix AI Corp, 701 Tillery
+                        <strong>Mailing Address:</strong> The Company AI Corp, 701 Tillery
                         Street Unit 12-2521, Austin, Texas 78702, United States.
                       </p>
                     </div>
@@ -1548,7 +1548,7 @@ function LegalContent() {
                       </p>
 
                       <p className="text-muted-foreground text-balance mb-6">
-                        References to our "Services" at Kortix in this statement
+                        References to our "Services" at The Company in this statement
                         include our website, apps, and other products and
                         services. This statement applies to our Services that
                         display or reference this Privacy Statement. Third-party
@@ -1557,7 +1557,7 @@ function LegalContent() {
                       </p>
 
                       <p className="text-muted-foreground text-balance mb-6">
-                        Kortix does not collect biometric or identifying
+                        The Company does not collect biometric or identifying
                         information. All data is processed securely and any data
                         is deleted upon account removal.
                       </p>

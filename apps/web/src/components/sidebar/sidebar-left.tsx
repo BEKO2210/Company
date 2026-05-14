@@ -531,7 +531,7 @@ function SidebarUpdateIndicator({ collapsed }: { collapsed: boolean }) {
           <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
         </span>
         <span className="text-xs font-semibold text-foreground truncate min-w-0">
-          {currentChannel === 'dev' ? 'New dev build' : 'New Kortix version'}
+          {currentChannel === 'dev' ? 'New dev build' : 'New The Company version'}
         </span>
         <span className="flex-1" />
         <span className="text-[10px] text-muted-foreground flex-shrink-0">v{latestVersion}</span>
@@ -1244,7 +1244,7 @@ export function SidebarLeft({ ...props }: React.ComponentProps<typeof Sidebar>) 
       {/* ====== HEADER: Logo + collapse/expand ====== */}
       <SidebarHeader className="pt-3 pb-0 overflow-visible">
         <div className="relative flex h-[32px] items-center px-3 justify-between">
-          {/* Collapsed: Kortix symbol (always visible), chevron on hover */}
+          {/* Collapsed: The Company symbol (always visible), chevron on hover */}
           {effectiveState === 'collapsed' && (
             <div
               className="group/collapsed absolute inset-0 flex items-center justify-center cursor-pointer"

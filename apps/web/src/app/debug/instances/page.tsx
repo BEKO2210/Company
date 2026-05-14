@@ -255,7 +255,7 @@ function renderVariant(variant: Variant): React.ReactNode {
         <>
           <Header />
           <ComputerHeroCard
-            title="Kortix is now even better"
+            title="The Company is now even better"
             description={
               <>
                 Your plan now includes a dedicated cloud computer with{' '}
@@ -277,7 +277,7 @@ function renderVariant(variant: Variant): React.ReactNode {
         <>
           <Header />
           <ComputerHeroCard
-            title="Kortix is now even better"
+            title="The Company is now even better"
             description="Your plan now includes a dedicated cloud computer. Always on, runs while you sleep, full root access."
             ctaLabel="Claim Computer"
             ctaLoadingLabel="Setting up…"

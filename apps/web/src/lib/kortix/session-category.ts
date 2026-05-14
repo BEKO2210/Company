@@ -1,7 +1,7 @@
 /**
  * Session categorisation for workspace sessions + sidebar filtering.
  *
- * OpenCode sessions in the Kortix workspace come from different
+ * OpenCode sessions in the The Company workspace come from different
  * sources and the sidebar/tabs should treat them differently:
  *
  *   - `human`       — user created this in the general chat, or any other

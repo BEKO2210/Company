@@ -16,7 +16,7 @@ export function KortixLogo({ size = 24, variant = 'symbol', className }: KortixL
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src="/logomark-white.svg"
-        alt="Kortix"
+        alt="The Company"
         className={cn('invert dark:invert-0 flex-shrink-0', className)}
         style={{ height: `${size}px`, width: 'auto' }}
         suppressHydrationWarning
@@ -29,7 +29,7 @@ export function KortixLogo({ size = 24, variant = 'symbol', className }: KortixL
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src="/kortix-symbol.svg"
-      alt="Kortix"
+      alt="The Company"
       className={cn('dark:invert flex-shrink-0', className)}
       style={{ width: `${size}px`, height: `${size}px` }}
       suppressHydrationWarning

@@ -39,7 +39,7 @@ export async function GET(request: NextRequest) {
     const deepLink = `kortix://auth/callback${forwardParams.toString() ? `?${forwardParams.toString()}` : ''}`
     const escaped = deepLink.replace(/&/g, '&amp;').replace(/"/g, '&quot;')
     const html = `<!doctype html><html><head><meta charset="utf-8"/>
-<title>Opening Kortix…</title>
+<title>Opening The Company…</title>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <style>
   html,body{margin:0;height:100%;background:#0a0a0a;color:#f4f4f5;
@@ -57,7 +57,7 @@ export async function GET(request: NextRequest) {
 <div class="wrap"><div>
   <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
   <h1>You're signed in</h1>
-  <p>Opening Kortix… you can close this tab.<br/>
+  <p>Opening The Company… you can close this tab.<br/>
     If nothing happens, <a href="${escaped}">click here</a> to open the app.</p>
 </div></div>
 <script>window.location.replace(${JSON.stringify(deepLink)});</script>

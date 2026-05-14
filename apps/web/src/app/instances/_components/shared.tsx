@@ -47,7 +47,7 @@ export function ComputerHeroCard({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/kortix-computer.png"
-        alt="Kortix Computer"
+        alt="The Company Computer"
         className="h-40 w-40 object-contain select-none pointer-events-none"
         draggable={false}
       />

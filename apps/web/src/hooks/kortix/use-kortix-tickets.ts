@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Kortix tickets — hooks for tickets, columns, fields, templates, and
+ * The Company tickets — hooks for tickets, columns, fields, templates, and
  * workspace agents (the "team"). Hits /kortix/tickets and legacy
  * /kortix/projects/:id/* compatibility routes.
  */
@@ -116,7 +116,7 @@ async function kfetch<T>(serverUrl: string, apiPath: string, init?: RequestInit)
   const res = await authenticatedFetch(url, init);
   if (!res.ok) {
     const text = await res.text().catch(() => '');
-    throw new Error(`Kortix API ${res.status}: ${text.slice(0, 200)}`);
+    throw new Error(`The Company API ${res.status}: ${text.slice(0, 200)}`);
   }
   return res.json();
 }

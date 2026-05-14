@@ -26,7 +26,7 @@ const StudioBackground = dynamic(
   { ssr: false },
 );
 
-// Palette identical to Pixel Beams (Kortix monochrome brand): pure
+// Palette identical to Pixel Beams (The Company monochrome brand): pure
 // white in light mode, near-black in dark mode. The studio's directional
 // lighting is flattened in light mode so the white page reads as flat
 // (otherwise key/back lights subtract toward grey, leaving smudges).

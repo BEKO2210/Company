@@ -1143,14 +1143,14 @@ function NotificationsTab() {
                                     <NotificationToggle
                                         icon={HelpCircle}
                                         label="Questions"
-                                        description="When Kortix needs your input to continue"
+                                        description="When The Company needs your input to continue"
                                         enabled={preferences.onQuestion}
                                         onToggle={(v) => setPreference('onQuestion', v)}
                                     />
                                     <NotificationToggle
                                         icon={ShieldCheck}
                                         label="Permission Requests"
-                                        description="When Kortix needs permission to use a tool"
+                                        description="When The Company needs permission to use a tool"
                                         enabled={preferences.onPermission}
                                         onToggle={(v) => setPreference('onPermission', v)}
                                     />
@@ -1267,7 +1267,7 @@ function InstancesSection({ accountState, onRefetch }: { accountState: any; onRe
                         onClick={() => useNewInstanceModalStore.getState().openNewInstanceModal()}
                     >
                         <Plus className="size-3 mr-1" />
-                        New Kortix
+                        New The Company
                     </Button>
                 )}
             </div>
@@ -1614,11 +1614,11 @@ function BillingTab({ returnUrl, isActive }: { returnUrl: string; isActive: bool
                 </div>
             </div>
 
-            {/* ── Kortix YOLO (shown between Credits and Top-up actions) ── */}
+            {/* ── The Company YOLO (shown between Credits and Top-up actions) ── */}
             {yoloUsage && (
                 <div className="border-t border-border pt-4 space-y-2">
                     <div className="flex items-center justify-between">
-                        <p className="text-xs uppercase tracking-widest text-muted-foreground">Kortix YOLO</p>
+                        <p className="text-xs uppercase tracking-widest text-muted-foreground">The Company YOLO</p>
                         <a
                             href="https://yolo.kortix.com"
                             target="_blank"
@@ -1635,14 +1635,14 @@ function BillingTab({ returnUrl, isActive }: { returnUrl: string; isActive: bool
                             : '5h window starts on first request'}
                     </p>
                     <p className="text-xs text-muted-foreground/70 leading-relaxed pt-1">
-                        Every Kortix subscription includes{' '}
+                        Every The Company subscription includes{' '}
                         <a
                             href="https://yolo.kortix.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="font-medium text-foreground/80 underline underline-offset-2 decoration-foreground/30 hover:decoration-foreground/60"
                         >
-                            Kortix YOLO
+                            The Company YOLO
                         </a>{' '}—
                         an all-you-can-use AI model subscription powered by our in-house model router.
                         Choose between <span className="font-medium text-foreground/80">Fast</span> and{' '}
@@ -1763,7 +1763,7 @@ function TransactionsTab() {
             <div>
                 <h3 className="text-lg font-medium tracking-tight mb-0.5">Credit ledger</h3>
                 <p className="text-sm text-muted-foreground">
-                    Ledger-backed account events from the Kortix schema: purchases, grants, usage, expirations, refunds, and bonuses.
+                    Ledger-backed account events from the The Company schema: purchases, grants, usage, expirations, refunds, and bonuses.
                 </p>
             </div>
             <CreditTransactions />

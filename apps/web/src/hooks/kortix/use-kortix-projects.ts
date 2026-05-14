@@ -1,8 +1,8 @@
 /**
- * Kortix workspace compatibility hooks.
+ * The Company workspace compatibility hooks.
  *
  * Fetches from kortix-master's legacy /kortix/projects API through the currently
- * active sandbox route (/v1/p/.../8000/kortix/projects). This keeps Kortix
+ * active sandbox route (/v1/p/.../8000/kortix/projects). This keeps The Company
  * workspace data on the same authenticated transport path as the rest of the
  * dashboard/OpenCode APIs.
  */
@@ -40,7 +40,7 @@ async function kortixFetch<T>(serverUrl: string, apiPath: string, init?: Request
   const res = await authenticatedFetch(url, init);
   if (!res.ok) {
     const text = await res.text().catch(() => '');
-    throw new Error(`Kortix API ${res.status}: ${text.slice(0, 100)}`);
+    throw new Error(`The Company API ${res.status}: ${text.slice(0, 100)}`);
   }
   return res.json();
 }

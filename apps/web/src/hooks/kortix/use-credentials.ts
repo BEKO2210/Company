@@ -48,7 +48,7 @@ async function kfetch<T>(serverUrl: string, apiPath: string, init?: RequestInit)
   const res = await authenticatedFetch(url, init);
   if (!res.ok) {
     const text = await res.text().catch(() => '');
-    throw new Error(`Kortix API ${res.status}: ${text.slice(0, 300)}`);
+    throw new Error(`The Company API ${res.status}: ${text.slice(0, 300)}`);
   }
   return res.json();
 }

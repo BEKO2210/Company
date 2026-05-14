@@ -194,7 +194,7 @@ function VersionEntryCard({
         )}
         {isDev && entry.sha && (
           <div className="mt-2">
-            <a href={`https://github.com/kortix-ai/suna/commit/${entry.sha}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-muted-foreground/70 hover:text-primary transition-colors">
+            <a href={`https://github.com/beko2210/company/commit/${entry.sha}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-muted-foreground/70 hover:text-primary transition-colors">
               <GitCommit className="h-3 w-3" />
               <span className="font-mono">{entry.sha.substring(0, 8)}</span>
             </a>
@@ -272,7 +272,7 @@ export function VersionHistoryPanel({
                       <> {' '}&middot; Latest: <span className="font-mono font-medium text-primary">{latestVersion.startsWith('dev-') ? latestVersion : `v${latestVersion}`}</span></>
                     )}
                   </>
-                ) : 'Version history for Kortix Computer'
+                ) : 'Version history for The Company Computer'
               )}
             </p>
             {updateAvailable && !isUpdating && onUpdateLatest && (

@@ -335,7 +335,7 @@ export function WebSearchLoadingState({
                     {query}
                   </span>
 
-                  {/* Kortix loading animation */}
+                  {/* The Company loading animation */}
                   <KortixLoader customSize={16} />
                 </motion.div>
               );

@@ -387,7 +387,7 @@ function LogoCard({ asset, fmt }: { asset: LogoAsset; fmt: LogoFormat }) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={asset.svgSrc}
-          alt={`Kortix ${asset.label} ${asset.variant}`}
+          alt={`The Company ${asset.label} ${asset.variant}`}
           className={cn(
             'object-contain',
             isWordmark
@@ -687,7 +687,7 @@ export default function BrandPage() {
                 </h1>
                 <p className="text-base text-muted-foreground leading-relaxed max-w-xl">
                   Logo assets, color palette, typography, motion tokens,
-                  component library, and usage rules for building Kortix.
+                  component library, and usage rules for building The Company.
                   The complete reference for designers and engineers.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-6">
@@ -854,7 +854,7 @@ export default function BrandPage() {
                           s.cls
                         )}
                       >
-                        Kortix Computer
+                        The Company Computer
                       </p>
                     </div>
                   ))}
@@ -866,7 +866,7 @@ export default function BrandPage() {
                     Roobert Mono
                   </span>
                   <p className="font-mono text-lg md:text-2xl tracking-tight">
-                    const agent = new Kortix();
+                    const agent = new The Company();
                   </p>
                   <p className="font-mono text-[11px] text-neutral-600 mt-4">
                     ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
@@ -1030,9 +1030,9 @@ export default function BrandPage() {
                           <Button variant="link">Link</Button>
                         </div>
                       </div>
-                      {/* Kortix Variants */}
+                      {/* The Company Variants */}
                       <div>
-                        <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider">Kortix Variants</p>
+                        <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider">The Company Variants</p>
                         <div className="flex flex-wrap gap-2">
                           <Button variant="subtle">Subtle</Button>
                           <Button variant="muted">Muted</Button>
@@ -1666,10 +1666,10 @@ export default function BrandPage() {
                     <Accordion type="single" collapsible className="w-full">
                       <AccordionItem value="item-1">
                         <AccordionTrigger>
-                          What is Kortix?
+                          What is The Company?
                         </AccordionTrigger>
                         <AccordionContent>
-                          Kortix is an AI-powered platform for building and
+                          The Company is an AI-powered platform for building and
                           deploying intelligent agents. It provides the
                           infrastructure, tools, and interfaces needed to create
                           production-grade AI workflows.
@@ -1680,7 +1680,7 @@ export default function BrandPage() {
                           What design system does it use?
                         </AccordionTrigger>
                         <AccordionContent>
-                          Kortix uses a monochromatic design system with
+                          The Company uses a monochromatic design system with
                           strategic accent colors, built on OKLCH color tokens,
                           the Roobert type family, and Radix UI primitives.
                         </AccordionContent>
@@ -2048,7 +2048,7 @@ export default function BrandPage() {
                 Page Patterns
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed mb-8">
-                How Kortix list / management pages are built. These are the
+                How The Company list / management pages are built. These are the
                 shared chrome pieces used by <code className="text-[11px] font-mono">/scheduled-tasks</code>,{' '}
                 <code className="text-[11px] font-mono">/channels</code>,{' '}
                 <code className="text-[11px] font-mono">/tunnel</code>,{' '}

@@ -46,7 +46,7 @@ function PlayIcon({ className }: { className?: string }) {
 }
 
 // macOS-style power button
-function PowerButton({ href, onClick, label = 'Launch Kortix' }: { href?: string; onClick?: () => void; label?: string }) {
+function PowerButton({ href, onClick, label = 'Launch The Company' }: { href?: string; onClick?: () => void; label?: string }) {
   const [hovered, setHovered] = useState(false);
 
   const inner = (
@@ -282,7 +282,7 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
         <div className="flex items-center gap-1 shrink-0">
           {/* GitHub stars (hidden on mobile) */}
           <a
-            href="https://github.com/kortix-ai/suna"
+            href="https://github.com/beko2210/company"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-colors"
@@ -304,7 +304,7 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
               onClick={() => { trackCtaSignup(); router.push(ctaLink); }}
               variant="ghost"
               size="icon"
-              aria-label="Launch Kortix"
+              aria-label="Launch The Company"
               className="opacity-80 hover:opacity-100"
             >
               <svg viewBox="0 0 24 24" className="size-[20px]" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round">

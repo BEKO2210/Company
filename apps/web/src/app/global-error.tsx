@@ -280,7 +280,7 @@ export default function GlobalError({
     if (shouldIgnoreBrowserRuntimeNoise({ message: error.message, error })) {
       return;
     }
-    console.error('[Kortix Global Error]', error);
+    console.error('[The Company Global Error]', error);
 
     const loc = typeof window !== 'undefined' ? window.location : undefined;
     const nav = typeof navigator !== 'undefined' ? navigator : undefined;

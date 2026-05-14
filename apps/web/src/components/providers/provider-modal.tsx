@@ -522,7 +522,7 @@ export function GlobalProviderModal() {
     if (!providers) return [];
     const connectedIds = new Set(providers.connected ?? []);
     // If kortix provider is connected, it serves all models — hide redundant
-    // built-in providers so users see a clean Kortix-only model list.
+    // built-in providers so users see a clean The Company-only model list.
     const KORTIX_SUPERSEDED = [
       'anthropic',
       'openai',

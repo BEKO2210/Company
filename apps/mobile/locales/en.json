@@ -89,7 +89,7 @@
     "openEmailApp": "Open email app",
     "goToSignIn": "Go to sign in",
     "verifyEmailInstructions": "Click the link in the email to verify your account, then sign in.",
-    "welcomeTitle": "Hire Kortix for",
+    "welcomeTitle": "Hire The Company for",
     "rotatingPhrases": {
       "presentations": "presentations",
       "writing": "writing",
@@ -114,13 +114,13 @@
       "passwordTooShort": "Password must be at least 8 characters"
     },
     "drawer": {
-      "defaultTitle": "Welcome to Kortix",
+      "defaultTitle": "Welcome to The Company",
       "defaultMessage": "The AI Super Mega Giga app.",
-      "signInToChat": "Welcome to Kortix",
+      "signInToChat": "Welcome to The Company",
       "signInToChatMessage": "The AI Super Mega Giga app.",
-      "signUpUnlock": "Welcome to Kortix",
+      "signUpUnlock": "Welcome to The Company",
       "signUpUnlockMessage": "The AI Super Mega Giga app.",
-      "welcomeBack": "Welcome to Kortix",
+      "welcomeBack": "Welcome to The Company",
       "welcomeBackMessage": "The AI Super Mega Giga app.",
       "signUpToContinue": "Sign up to continue",
       "signUpToContinueMessage": "Please sign up or sign in to create and select workers, connect apps and much more"
@@ -128,7 +128,7 @@
     "guest": {
       "label": "Guest",
       "title": "Browse Without\nan Account",
-      "description": "Try Kortix with limited features. No signup required!",
+      "description": "Try The Company with limited features. No signup required!",
       "continue": "Continue as Guest",
       "signUp": "Sign Up Instead",
       "agreement": "By continuing, you agree to our",
@@ -138,12 +138,12 @@
     }
   },
   "onboarding": {
-    "welcome": "See what Kortix can do",
+    "welcome": "See what The Company can do",
     "welcomeSubtitle": "Your AI assistant that takes action",
     "skip": "Skip",
     "next": "Next",
     "getStarted": "Get Started",
-    "kortixComputer": "Kortix Computer",
+    "kortixComputer": "The Company Computer",
     "ready": "Ready",
     "examples": {
       "presentations": {
@@ -260,8 +260,8 @@
   },
   "chat": {
     "newChat": "New Chat",
-    "placeholder": "Give Kortix a task...",
-    "inputPlaceholder": "Ask Kortix anything...",
+    "placeholder": "Give The Company a task...",
+    "inputPlaceholder": "Ask The Company anything...",
     "recording": "Recording...",
     "cancelRecording": "Cancel recording",
     "stopRecording": "Stop recording",
@@ -274,7 +274,7 @@
     "rateThisResult": "Rate this result",
     "feedbackHelpsImprove": "Your feedback helps us improve",
     "additionalFeedbackOptional": "Additional feedback (optional)",
-    "helpKortixImprove": "Help Kortix improve with my feedback",
+    "helpKortixImprove": "Help The Company improve with my feedback",
     "submit": "Submit",
     "submitting": "Submitting...",
     "suggestedFollowUps": "Suggested follow-ups",
@@ -295,7 +295,7 @@
     "newWorker": "New Worker",
     "myWorkers": "My Workers",
     "searchAgents": "Search workers",
-    "defaultAgent": "Kortix",
+    "defaultAgent": "The Company",
     "defaultDescription": "General purpose AI for all tasks",
     "superWorker": "Super Worker",
     "coder": "Coder",
@@ -516,7 +516,7 @@
     "mode": "Mode"
   },
   "placeholders": {
-    "default": "Give Kortix a task...",
+    "default": "Give The Company a task...",
     "search": "Search...",
     "searchConversations": "Search chats",
     "searchAgents": "Search workers",
@@ -550,8 +550,8 @@
   "billing": {
     "loadingPaywall": "Loading plans...",
     "checkoutUnavailable": "Mobile checkout not available",
-    "checkoutUnavailableMessage": "To subscribe to a plan, please visit kortix.com on the web.",
-    "goToWeb": "Go to kortix.com",
+    "checkoutUnavailableMessage": "To subscribe to a plan, please visit example.com on the web.",
+    "goToWeb": "Go to example.com",
     "billingStatus": "Billing Status",
     "loading": "Loading billing information...",
     "error": "Failed to load billing information",
@@ -600,12 +600,12 @@
   "beta": {
     "title": "Beta Features",
     "webSupportTitle": "Fully Supported on Web",
-    "webSupportDescription": "Available on Kortix.com. Coming to mobile soon—still work-in-progress here.",
-    "visitKortix": "Visit Kortix.com",
+    "webSupportDescription": "Available on example.com. Coming to mobile soon—still work-in-progress here.",
+    "visitKortix": "Visit example.com",
     "advancedFeatures": "Advanced Features",
     "mobileBeta": "Mobile Beta",
     "pleaseNote": "Please Note",
-    "mobileWarning": "Work-in-progress on mobile and may have issues. For the best experience, use Kortix.com."
+    "mobileWarning": "Work-in-progress on mobile and may have issues. For the best experience, use example.com."
   },
   "accountDeletion": {
     "title": "Delete Account",
@@ -999,13 +999,13 @@
       "title": "System Prompt",
       "description": "Define how your worker should behave and what it should do",
       "loading": "Loading instructions...",
-      "cannotEditSuna": "Suna's system prompt is managed centrally and cannot be edited.",
+      "cannotEditSuna": "The Company's system prompt is managed centrally and cannot be edited.",
       "cannotEdit": "This system prompt cannot be edited.",
       "placeholder": "Define how your worker should behave...",
       "saving": "Saving...",
       "saveChanges": "Save Changes",
       "cannotEditAlert": "Cannot Edit",
-      "sunaManaged": "Suna's system prompt is managed centrally.",
+      "sunaManaged": "The Company's system prompt is managed centrally.",
       "errorUpdatePrompt": "Failed to update system prompt"
     },
     "loadingWorker": "Loading worker...",
@@ -1017,10 +1017,10 @@
     "loadingTools": "Loading tools...",
     "noToolsAvailable": "No tools available",
     "toolsWillAppear": "Tools will appear here once available",
-    "sunaToolsManaged": "Suna's tools are managed centrally and cannot be edited.",
+    "sunaToolsManaged": "The Company's tools are managed centrally and cannot be edited.",
     "toolsNotEditable": "These tools cannot be edited.",
     "cannotEditTools": "Cannot Edit",
-    "sunaToolsManagedAlert": "Suna's tools are managed centrally.",
+    "sunaToolsManagedAlert": "The Company's tools are managed centrally.",
     "savingChanges": "Saving...",
     "saveChanges": "Save Changes"
   },

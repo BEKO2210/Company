@@ -35,7 +35,7 @@ export const WallpaperBackground = memo(function WallpaperBackground({
   const centerTopClass = preview ? 'top-[50%]' : 'top-[46%]';
 
   // ── Variant 1: Brandmark ──────────────────────────────────────────────
-  // Full-bleed oversized Kortix symbol outline, faded
+  // Full-bleed oversized The Company symbol outline, faded
   if (wallpaper.type === 'svg') {
     return (
       <div
@@ -60,7 +60,7 @@ export const WallpaperBackground = memo(function WallpaperBackground({
   }
 
   // ── Variant 2: Symbol ─────────────────────────────────────────────────
-  // Tiny Kortix symbol, dead center, ghost-level opacity
+  // Tiny The Company symbol, dead center, ghost-level opacity
   if (wallpaper.type === 'symbol') {
     return (
       <div
@@ -165,7 +165,7 @@ export const WallpaperBackground = memo(function WallpaperBackground({
           />
         </div>
 
-        {/* L2 — Kortix logomark, sized relative to the actual container so
+        {/* L2 — The Company logomark, sized relative to the actual container so
              it stays the right size in both real-page and thumbnail
              contexts (independent of the 1280×720 arc scaler above). */}
         {/* eslint-disable-next-line @next/next/no-img-element */}

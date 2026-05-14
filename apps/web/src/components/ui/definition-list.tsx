@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Kortix <DefinitionList> — key:value pair list.
+ * The Company <DefinitionList> — key:value pair list.
  *
  * Used for:
  *   • Project About → Details panel

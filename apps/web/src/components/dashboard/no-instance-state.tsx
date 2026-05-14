@@ -41,7 +41,7 @@ function ComputerHero({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/kortix-computer.png"
-        alt="Kortix Computer"
+        alt="The Company Computer"
         className="h-40 w-40 object-contain select-none pointer-events-none"
         draggable={false}
       />
@@ -125,7 +125,7 @@ export function NoInstanceState() {
       <div className="w-full max-w-lg">
         {canClaimComputer ? (
           <ComputerHero
-            title="Kortix is now even better"
+            title="The Company is now even better"
             description={
               <>
                 Your plan now includes a dedicated cloud computer

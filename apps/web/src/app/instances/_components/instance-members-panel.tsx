@@ -127,7 +127,7 @@ export function InstanceMembersPanel({ sandboxId }: { sandboxId: string }) {
           <h2 className="text-lg font-semibold tracking-tight">Team</h2>
           <p className="text-muted-foreground mt-1 text-sm">
             People with access to this instance. Invite teammates by email —
-            they get instant access if they already use Kortix, otherwise we
+            they get instant access if they already use The Company, otherwise we
             send them a signup link.
           </p>
         </div>
@@ -600,7 +600,7 @@ function InviteDialog({
 
           <div className="border-border/60 bg-muted/20 flex items-center justify-between gap-2 border-t px-6 py-3.5">
             <p className="text-muted-foreground/70 text-[11px]">
-              If they don't have Kortix yet, we'll send a signup link.
+              If they don't have The Company yet, we'll send a signup link.
             </p>
             <div className="flex items-center gap-2">
               <Button

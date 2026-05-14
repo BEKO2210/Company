@@ -31,8 +31,8 @@ export const PROVIDER_LABELS: Record<string, string> = {
   moonshotai: 'Moonshot',
   'moonshotai-cn': 'Moonshot',
   opencode: 'OpenCode Zen',
-  'kortix-yolo': 'Kortix Yolo',
-  kortix: 'Kortix',
+  'kortix-yolo': 'The Company Yolo',
+  kortix: 'The Company',
   firmware: 'Firmware',
   bedrock: 'AWS Bedrock',
   openrouter: 'OpenRouter',
@@ -109,7 +109,7 @@ export const PROVIDER_HINTS: Record<string, string> = {
 
 export const PROVIDER_NOTES: Record<string, string> = {
   opencode: 'One key for many hosted models',
-  'kortix-yolo': 'Fast and Think models from Kortix Yolo',
+  'kortix-yolo': 'Fast and Think models from The Company Yolo',
   anthropic: 'Claude Pro/Max subscription or your own API key',
   openai: 'ChatGPT Pro/Plus subscription or your own API key',
   'github-copilot': 'Reuse your existing Copilot plan',

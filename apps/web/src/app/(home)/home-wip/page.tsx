@@ -210,7 +210,7 @@ function UseCase({
       <div className="md:col-span-7">
         <MediaPlaceholder
           label={`Demo: ${title}`}
-          hint="Screen recording or screenshot of Suna performing this workflow end-to-end."
+          hint="Screen recording or screenshot of The Company performing this workflow end-to-end."
           src={src}
           kind={src ? 'image' : 'video'}
         />
@@ -273,7 +273,7 @@ export default function HomeWip() {
                 <span className="text-muted-foreground">AI workspace</span>
               </h1>
               <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl text-center">
-                Hand off your most time-consuming work. Suna runs across your local files, cloud tools, and the browser, and ships back finished deliverables — spreadsheets, decks, docs, PDFs.
+                Hand off your most time-consuming work. The Company runs across your local files, cloud tools, and the browser, and ships back finished deliverables — spreadsheets, decks, docs, PDFs.
               </p>
             </div>
             <div className="relative z-[1] pb-8 px-4 flex flex-col items-center gap-6">
@@ -331,7 +331,7 @@ export default function HomeWip() {
             <section className="max-w-5xl mx-auto px-6 pt-8 pb-10 sm:pb-14">
               <MediaPlaceholder
                 label="HERO VIDEO — 60–90s product loom"
-                hint="One prompt → Suna spawns parallel tasks → finished deck/sheet/doc returned. Or swap in YouTube embed Eu5mYMavctM."
+                hint="One prompt → The Company spawns parallel tasks → finished deck/sheet/doc returned. Or swap in YouTube embed Eu5mYMavctM."
                 aspect="aspect-video"
                 kind="video"
               />
@@ -394,7 +394,7 @@ export default function HomeWip() {
                     <span className="text-sm font-semibold text-foreground">…and anything else</span>
                   </div>
                   <p className="text-[13px] text-muted-foreground leading-relaxed">
-                    Suna runs in a full Linux environment with internet, browser, and your tools — so the deliverable is whatever the work needs.
+                    The Company runs in a full Linux environment with internet, browser, and your tools — so the deliverable is whatever the work needs.
                   </p>
                   <Link href="/templates" className="inline-flex items-center gap-1.5 text-xs font-medium text-foreground hover:gap-2 transition-all">
                     Explore templates <ArrowRight className="size-3" />
@@ -412,10 +412,10 @@ export default function HomeWip() {
                   /02 · Where it works
                 </span>
                 <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight text-foreground leading-tight">
-                  Suna meets work where it lives.
+                  The Company meets work where it lives.
                 </h2>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed max-w-xl">
-                  Most agents pick one surface. Suna unifies all three — your local files and apps, your cloud stack, and the open web.
+                  Most agents pick one surface. The Company unifies all three — your local files and apps, your cloud stack, and the open web.
                 </p>
               </div>
             </Reveal>
@@ -425,7 +425,7 @@ export default function HomeWip() {
                 <RuntimeColumn
                   icon={<Folder className="size-5" />}
                   title="Local files & apps"
-                  desc="Suna reads, writes, and reorganizes the folders, drives, and apps on the machine you're already using."
+                  desc="The Company reads, writes, and reorganizes the folders, drives, and apps on the machine you're already using."
                   pills={
                     <>
                       <IntegrationPill icon={<Folder className="size-4 text-foreground" />} name="Filesystem" />
@@ -452,7 +452,7 @@ export default function HomeWip() {
                 <RuntimeColumn
                   icon={<Globe className="size-5" />}
                   title="The browser"
-                  desc="A real browser session — Suna logs in, navigates, fills forms, scrapes, and clicks through anything you can."
+                  desc="A real browser session — The Company logs in, navigates, fills forms, scrapes, and clicks through anything you can."
                   pills={
                     <>
                       <IntegrationPill icon={<Globe className="size-4 text-foreground" />} name="Web browse" />
@@ -468,7 +468,7 @@ export default function HomeWip() {
               <div className="mt-10">
                 <MediaPlaceholder
                   label="DEMO: tri-surface runtime"
-                  hint="Split-screen recording: Suna touching a local file (left) → calling a SaaS tool (middle) → driving the browser (right). 30s loop, no audio."
+                  hint="Split-screen recording: The Company touching a local file (left) → calling a SaaS tool (middle) → driving the browser (right). 30s loop, no audio."
                   aspect="aspect-[21/9]"
                   kind="video"
                 />
@@ -494,7 +494,7 @@ export default function HomeWip() {
                 <UseCase
                   n="01"
                   title="Prepare documents from source files"
-                  desc="Hand Suna a folder of drafts, transcripts, and attachments. It assembles, synthesizes, and returns a structured draft — leaving only refinement for you."
+                  desc="Hand The Company a folder of drafts, transcripts, and attachments. It assembles, synthesizes, and returns a structured draft — leaving only refinement for you."
                   src="/images/landing-showcase/docs.png"
                 />
               </Reveal>
@@ -502,7 +502,7 @@ export default function HomeWip() {
                 <UseCase
                   n="02"
                   title="Synthesize research across dozens of sources"
-                  desc="Share a question and a corpus — PDFs, web pages, Notion, Drive. Suna reads through everything and returns a summary ready for review, with citations."
+                  desc="Share a question and a corpus — PDFs, web pages, Notion, Drive. The Company reads through everything and returns a summary ready for review, with citations."
                   src="/images/landing-showcase/research.png"
                 />
               </Reveal>
@@ -510,7 +510,7 @@ export default function HomeWip() {
                 <UseCase
                   n="03"
                   title="Extract structured data from messy files"
-                  desc="Contracts, invoices, scraped tables, scanned docs. Suna pulls out the fields that matter and returns a clean spreadsheet or JSON."
+                  desc="Contracts, invoices, scraped tables, scanned docs. The Company pulls out the fields that matter and returns a clean spreadsheet or JSON."
                   src="/images/landing-showcase/data.png"
                 />
               </Reveal>
@@ -518,7 +518,7 @@ export default function HomeWip() {
                 <UseCase
                   n="04"
                   title="Build slide decks from your raw inputs"
-                  desc="Point Suna at the source — a doc, a meeting transcript, a quarter of metrics — and get a brand-formatted deck back, not a wireframe."
+                  desc="Point The Company at the source — a doc, a meeting transcript, a quarter of metrics — and get a brand-formatted deck back, not a wireframe."
                   src="/images/landing-showcase/slides.png"
                 />
               </Reveal>
@@ -576,7 +576,7 @@ export default function HomeWip() {
                   Yours. Forever.
                 </h2>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed max-w-xl">
-                  Cowork-class capability without the vendor lock-in. Suna is open source, MIT-licensed at the core, and runs on your hardware or your cloud. Every secret stays where you put it.
+                  Cowork-class capability without the vendor lock-in. The Company is open source, MIT-licensed at the core, and runs on your hardware or your cloud. Every secret stays where you put it.
                 </p>
               </div>
             </Reveal>
@@ -651,7 +651,7 @@ export default function HomeWip() {
               <Reveal delay={0.1} className="lg:col-span-6">
                 <MediaPlaceholder
                   label="SCREENSHOT: team workspace"
-                  hint="Org-level admin / shared agents view. Multiple seats, agent permissions, audit log glimpse. Optional: Slack message of Suna posting a deliverable."
+                  hint="Org-level admin / shared agents view. Multiple seats, agent permissions, audit log glimpse. Optional: Slack message of The Company posting a deliverable."
                   aspect="aspect-[4/3]"
                   kind="image"
                 />
@@ -670,7 +670,7 @@ export default function HomeWip() {
                   Built on a real machine.
                 </h2>
                 <p className="mt-3 text-base text-muted-foreground leading-relaxed max-w-xl">
-                  Every Suna workspace is a full Linux environment — bash, filesystem, package managers, browsers, the whole software ecosystem. That's why it can actually finish things.
+                  Every The Company workspace is a full Linux environment — bash, filesystem, package managers, browsers, the whole software ecosystem. That's why it can actually finish things.
                 </p>
               </div>
             </Reveal>
@@ -679,7 +679,7 @@ export default function HomeWip() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {[
                   { icon: <Layers className="size-4" />, title: 'Skills', desc: '60+ built-in capability packs — coding, browser automation, research, spreadsheets, deck-building. Add your own as code.' },
-                  { icon: <Workflow className="size-4" />, title: 'Goal loop', desc: 'Suna self-verifies. It plans, executes, checks the output, retries — and only stops when the deliverable is provably done.' },
+                  { icon: <Workflow className="size-4" />, title: 'Goal loop', desc: 'The Company self-verifies. It plans, executes, checks the output, retries — and only stops when the deliverable is provably done.' },
                   { icon: <GitFork className="size-4" />, title: 'Orchestration', desc: 'A primary agent decomposes work and delegates to parallel sub-agents. Like assembling a team for the job.' },
                 ].map(({ icon, title, desc }) => (
                   <div key={title} className="rounded-2xl border border-border bg-card/40 p-6">
@@ -710,8 +710,8 @@ export default function HomeWip() {
               <Accordion type="single" collapsible className="w-full">
                 {[
                   {
-                    q: 'How is Suna different from Claude Cowork, Manus, or Perplexity Comet?',
-                    a: 'Same class of capability — agents that work autonomously across files, tools, and the web — but Suna is open source and self-hostable. You can run it on your own hardware, audit every line, bring your own models, and never send a credential to a vendor.',
+                    q: 'How is The Company different from Claude Cowork, Manus, or Perplexity Comet?',
+                    a: 'Same class of capability — agents that work autonomously across files, tools, and the web — but The Company is open source and self-hostable. You can run it on your own hardware, audit every line, bring your own models, and never send a credential to a vendor.',
                   },
                   {
                     q: 'Can I really self-host the whole thing?',
@@ -719,7 +719,7 @@ export default function HomeWip() {
                   },
                   {
                     q: 'Does it work for non-technical teammates?',
-                    a: 'That is the point. Marketing, ops, finance, legal, and support teams use Suna without writing code — they describe the work, and Suna handles assembly. Engineers get the full Linux machine when they want it.',
+                    a: 'That is the point. Marketing, ops, finance, legal, and support teams use The Company without writing code — they describe the work, and The Company handles assembly. Engineers get the full Linux machine when they want it.',
                   },
                   {
                     q: 'What about safety and oversight?',
@@ -753,7 +753,7 @@ export default function HomeWip() {
                   Get started free<ArrowRight className="ml-1.5 size-3.5" />
                 </Button>
                 <Button size="lg" variant="outline" className="h-12 px-8 text-sm rounded-full" asChild>
-                  <a href="https://github.com/kortix-ai/suna" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/beko2210/company" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-1.5 size-3.5" /> Star on GitHub
                   </a>
                 </Button>
@@ -786,7 +786,7 @@ export default function HomeWip() {
           </button>
           <span className="hidden sm:block w-px h-5 bg-border" />
           <a
-            href="https://github.com/kortix-ai/suna"
+            href="https://github.com/beko2210/company"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center size-8 rounded-full hover:bg-foreground/[0.08] transition-colors"

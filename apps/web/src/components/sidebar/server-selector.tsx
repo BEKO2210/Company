@@ -945,9 +945,9 @@ export function InstanceManagerDialog({
 
   // Compute description text based on mode
   const modeDescription: Record<string, string> = {
-    list: 'Manage your Kortix instances.',
+    list: 'Manage your The Company instances.',
     add: 'Choose how to connect.',
-    custom: 'Connect to a Kortix instance by entering its address.',
+    custom: 'Connect to a The Company instance by entering its address.',
     edit: 'Update the connection details for this instance.',
     ssh: 'Connect via SSH or VS Code Remote SSH.',
   };
@@ -1231,7 +1231,7 @@ export function InstanceManagerDialog({
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-foreground">Custom URL</p>
                   <p className="text-xs text-muted-foreground/70 mt-0.5">
-                    Connect to any Kortix instance by address
+                    Connect to any The Company instance by address
                   </p>
                 </div>
               </button>
@@ -1273,7 +1273,7 @@ export function InstanceManagerDialog({
                   required
                 />
                 <p className="text-[10px] text-muted-foreground/50">
-                  The full URL of the Kortix server, e.g. http://192.168.1.50:8008/v1/p/kortix-sandbox/8000
+                  The full URL of the The Company server, e.g. http://192.168.1.50:8008/v1/p/kortix-sandbox/8000
                 </p>
               </div>
 

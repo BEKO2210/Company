@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'LLM Providers | Kortix',
+  title: 'LLM Providers | The Company',
   description: 'Connect and manage LLM providers for your sandbox',
 };
 

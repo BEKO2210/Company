@@ -22,7 +22,7 @@ export const ShaderWallpaper = memo(function ShaderWallpaper() {
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === 'dark';
 
-  // Kortix brand is pure monochrome (white/black). Light mode mirrors the
+  // The Company brand is pure monochrome (white/black). Light mode mirrors the
   // dark preset: pure white base with a mid-grey dither tone (so the dots
   // read clearly on white the same way the dark preset's lighter tone
   // reads on near-black).
