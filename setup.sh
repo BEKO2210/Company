@@ -239,9 +239,39 @@ echo
 
 if [ "$NO_START" -eq 1 ]; then
   echo "  Start it with:  ${BOLD}pnpm dev${RESET}"
+  echo "  Then verify:    ${BOLD}pnpm smoke${RESET}"
   echo
   exit 0
 fi
 
-step "Starting the company (Ctrl+C to stop)"
-exec pnpm dev
+# ─── 11. start + verify ─────────────────────────────────────────────────────
+step "Starting the company"
+DEV_LOG="/tmp/the-company-dev.log"
+pnpm dev >"$DEV_LOG" 2>&1 &
+DEV_PID=$!
+trap 'kill "$DEV_PID" 2>/dev/null || true; exit' INT TERM EXIT
+
+echo "  ${DIM}waiting for services to come up (the first run compiles, can take a minute)...${RESET}"
+READY=0
+for _ in $(seq 1 90); do
+  if ! kill -0 "$DEV_PID" 2>/dev/null; then
+    die "'pnpm dev' exited unexpectedly — see $DEV_LOG"
+  fi
+  API_CODE="$(curl -s -o /dev/null -m 3 -w '%{http_code}' http://localhost:8008/v1/health 2>/dev/null || echo 000)"
+  WEB_CODE="$(curl -s -o /dev/null -m 3 -w '%{http_code}' http://localhost:3000/auth 2>/dev/null || echo 000)"
+  if [ "$API_CODE" = "200" ] && [ "$WEB_CODE" = "200" ]; then READY=1; break; fi
+  sleep 2
+done
+if [ "$READY" -eq 1 ]; then ok "services are up"
+else warn "services didn't fully respond in time — the smoke test below will show what's wrong"; fi
+
+# verify every layer before declaring success
+bash scripts/smoke-test.sh || true
+
+echo "  ${BOLD}The company is running.${RESET}  Logs: ${DIM}tail -f $DEV_LOG${RESET}"
+echo "  ${DIM}Press Ctrl+C to stop. Re-check any time with: pnpm smoke${RESET}"
+echo
+tail -n 0 -f "$DEV_LOG" &
+TAIL_PID=$!
+wait "$DEV_PID" 2>/dev/null || true
+kill "$TAIL_PID" 2>/dev/null || true
